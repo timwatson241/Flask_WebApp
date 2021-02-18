@@ -58,7 +58,6 @@ colors = ['#F8BF14','#ebebeb', '#a99e8d','#ffffff','#2a2b2c','#94a9af','#4e75d4'
 app.layout = html.Div(
     [
         html.H1("Casca sales data analyzer", style={"textAlign": "center",'color':txcolor, 'margin-bottom':'10px','margin-top':'-5px','font-size':'60px'}),
-
         dcc.DatePickerRange(
                         id='date_range',
                         day_size = 50,
