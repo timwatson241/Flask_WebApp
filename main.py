@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, render_template, request, flash, redirect, url_for, session
+from flask_session import Session
 import os
 from os.path import join, dirname, realpath
 import os
@@ -7,24 +8,21 @@ import subprocess
 from subprocess import check_output
 from werkzeug.utils import secure_filename
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, VARCHAR
+import numpy as np
+import json
+from pangres import upsert
 
 app = Flask(__name__)
+app.secret_key = b'_5#e2L"F4fr8z47fb739nxec]skllfniasgfffsd/'
 
 # enable debugging mode
 app.config["DEBUG"] = True
 
-# Upload folder
-
-#UPLOAD_FOLDER = 'upload_dir/'
-#app.config['UPLOAD_FOLDER'] =  UPLOAD_FOLDER
-
 # create sqlalchemy engine
-engine = create_engine("mysql+pymysql://{user}:{pw}@localhost/{db}".format(user="root", pw="Crooked31!",db="csvData"))
+#engine = create_engine("mysql+pymysql://{user}:{pw}@localhost/{db}".format(user="root", pw="Crooked31!",db="casca"))
 
 ALLOWED_EXTENSIONS = set(['csv'])
-
-
 
 def CreateNewDir():
     print("I am being called")
@@ -67,19 +65,64 @@ def upload_file():
             CreateNewDir()
             #global UPLOAD_FOLDER
             file.save(os.path.join(UPLOAD_FOLDER, filename))
+            parseCSV(os.path.join(UPLOAD_FOLDER, filename))
             return redirect(url_for('uploaded_file',
                                     filename=filename))
-    return render_template('index.html')
-    
+    return render_template('index.html')   
 
 def parseCSV(filePath):
       # CVS Column Names
-      col_names = ['first_name','last_name','address', 'street', 'state' , 'zip']
+      #col_names = ['first_name','last_name','address', 'street', 'state' , 'zip']
       # Use Pandas to parse the CSV file
-      csvData = pd.read_csv(filePath,names=col_names, header=None)
+      df_orig = pd.read_csv(filePath)
 
+
+      df_reduced_columns = df_orig[['Name','Email', 'Financial Status','Created at','Total','Discount Code','Discount Amount','Tags','Lineitem quantity','Lineitem name','Lineitem sku','Shipping Province','Payment Method','Accepts Marketing','Location', 'Currency']]
+      df_reduced_columns = df_reduced_columns[df_reduced_columns['Lineitem name'] != 'Culture Manual']
+      df_reduced_columns = df_reduced_columns[df_reduced_columns['Lineitem name'] != "The Hitchhiker's Guide to Culture"]
+  
+      df_reduced_columns['Products Purchased'] = np.empty((len(df_reduced_columns), 0)).tolist()
+      df_reduced_columns['Purchase Skus'] = np.empty((len(df_reduced_columns), 0)).tolist()
+      df_reduced_columns['Products Purchased'] = df_reduced_columns['Product(s) Purchased'].astype('object')
+      df_reduced_columns['Purchase Skus'] = df_reduced_columns['Purchase Sku(s)'].astype('object')
+
+      df_reduced_columns['remove']=''
+      df_reduced_columns['Country']=''
+
+      df_reduced_columns['Country'] = np.where(df_reduced_columns['Currency'].str.contains("USD", na=False), 'US', 'CA')
+
+      Email = None
+      for index, row in df_reduced_columns.iterrows():
+          for a in range(row['Lineitem quantity']):
+              row['Product(s) Purchased'].append(row['Lineitem name'])
+              row['Purchase Sku(s)'].append(row['Lineitem sku'])
+          if row['Email']==Email:
+              i+=1
+              df_reduced_columns.loc[index, 'remove'] = 'Yes'
+              for b in range(row['Lineitem quantity']):
+                  df_reduced_columns.loc[index-i,'Product(s) Purchased'].append(row['Lineitem name'])
+                  df_reduced_columns.loc[index-i,'Purchase Sku(s)'].append(row['Lineitem sku'])
+              
+          else: i = 0
+          Email = row['Email']
+
+      df = df_reduced_columns[df_reduced_columns['remove'] != 'Yes']
+
+      df['Created at datetime'] = pd.to_datetime(df['Created at'],format='%m/%d/%y %H:%M')
+      df = df.drop(columns=['remove','Lineitem name','Lineitem sku','Created at','Lineitem quantity','Currency'])
+      df['Location'] = df['Location'].replace(np.nan, 'Online')
+
+      df['Product(s) Purchased'] = df['Product(s) Purchased'].apply(json.dumps)
+      df['Purchase Sku(s)'] = df['Purchase Sku(s)'].apply(json.dumps)
+
+      df.set_index('Name', inplace=True)
+      print(list(df.index.names))
+      dtype = {'Name':VARCHAR(50)}
+      engine = create_engine("mysql+pymysql://{user}:{pw}@localhost/{db}".format(user="root", pw="Crooked31!",db="casca"))
       # Insert whole DataFrame into MySQL
-      csvData.to_sql('addresses', con = engine, if_exists = 'append', chunksize = 1000, index = False)
+      upsert(engine=engine, df=df, table_name='shopify_data', if_row_exists='update',dtype=dtype)
+
+      #df.to_sql('shopify_data', con = engine, if_exists = 'append', chunksize = 1000, index = False)
 
 @app.route('/uploaded', methods=['GET', 'POST'])
 def uploaded_file():
@@ -90,4 +133,9 @@ def uploaded_file():
   '''
 
 if (__name__ == "__main__"):
-     app.run(port = 5000)
+      app.secret_key = 'super secret key'
+      app.config['SESSION_TYPE'] = 'filesystem'
+      sess = Session()
+      sess.init_app(app)
+      app.debug = True
+      app.run()
