@@ -243,7 +243,7 @@ def update_prov_table(country_3,start_date,end_date,df_json):
 
     states_df = pd.DataFrame({'state':list(states_dict.keys()),'number of orders':list(states_dict.values())})
     states_df['Color']='#a99e8d'
-    canada=['AB','BC','SK','MB','ON','QC','NL','NB','NS','PE','YK','NT','NU']
+    canada=['AB','BC','SK','MB','ON','QC','NL','NB','NS','PE','YT','NT','NU']
     for index, row in states_df.iterrows():
         if row['state'] in canada:
             states_df['Color'][index]= 'red'
