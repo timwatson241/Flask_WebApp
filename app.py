@@ -4,6 +4,7 @@ from flask import Flask, send_from_directory
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+import dash_auth
 from dash.dependencies import Input, Output, State
 import pandas as pd
 import numpy as np
@@ -13,6 +14,7 @@ import json
 import os
 from helpers import get_dataframe, build_piechart, process_df
 from sqlalchemy import create_engine
+from users import USERNAME_PASSWORD_PAIRS
 
 # Shopify API credentials
 CA_key = os.getenv('CA_key')
@@ -24,6 +26,12 @@ US_pass = os.environ.get('US_pass')
 # Initiate Dash server
 server = Flask(__name__)
 app = dash.Dash(server=server)
+
+auth = dash_auth.BasicAuth(
+    app,
+    USERNAME_PASSWORD_PAIRS
+)
+
 
 global table_name
 table_name = 'shopifydata1'

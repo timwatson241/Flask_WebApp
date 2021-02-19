@@ -232,7 +232,7 @@ def process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_in
     discount_code_qty_dict['Other Discount'] = qty_otherdiscount
 
     # how many in store?
-    Retail_store = len(df_temp[df_temp['location_id']==15103557690])
+    Retail_store = len(df_temp[df_temp['location_id']=='15103557690'])
     Online = len(df_temp) - Retail_store
 
     return leather_color_dict,leather_size_dict,knit_color_dict,knit_size_dict,utility_color_dict,utility_size_dict,qty_all_orders,qty_giveaways,Smartfit_order_count,Country_CA,Country_US,PreOrder_yes,PreOrder_no,total_price_sales_usd,total_price_sales_cad,qty_sales_orders,No_Smartfit_order_count,qty_utility_sold,qty_knit_sold,qty_leather_sold,shoes_sold,qty_smartfit_sold,qty_kepler_sold,qty_pascal_sold,qty_giftcard_sold,discount_code_qty_dict,Retail_store,Online
