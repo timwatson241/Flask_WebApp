@@ -277,7 +277,7 @@ def build_piechart(labels,values,text,colors,bgcolor,txcolor):
                     'bgcolor': bgcolor,
                     'xanchor': 'center', 'x': 0.5, 'y': -0.05},
                 font = dict(
-                    family = "sans-serif",
+                    family = "Helvetica,sans-serif",
                     size = 12,
                     color = txcolor)
             ),

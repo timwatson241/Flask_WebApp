@@ -65,7 +65,7 @@ engine = create_engine(URI)
 
 app.layout = html.Div(
     [
-        html.H1("Casca sales data analyzer", style={"textAlign": "center",'color':txcolor, 'margin-bottom':'10px','margin-top':'-5px','font-size':'60px'}),
+        html.H1("Casca Sales Dashboard", style={"textAlign": "center",'color':txcolor, 'margin-bottom':'10px','margin-top':'-5px','font-size':'60px','fontFamily':'Helvetica,sans-serif'}),
         dcc.DatePickerRange(
                         id='date_range',
                         day_size = 50,
@@ -82,7 +82,7 @@ app.layout = html.Div(
         
         
         html.Div(id='intermediate-value', style={'display': 'none'}),
-        html.H3(id='date-confirm', style={"textAlign": "center",'color':txcolor}),
+        html.H3(id='date-confirm', style={"textAlign": "center",'color':txcolor,'fontFamily':'Helvetica,sans-serif'}),
         
         html.Div([
             html.Div([
@@ -109,7 +109,7 @@ app.layout = html.Div(
                         value='Total Orders',
                         clearable = False
                         ),
-                    ],style={'width':'40%','margin': '0 auto','margin-bottom':'5px'}),
+                    ],style={'width':'40%','margin': '0 auto','margin-bottom':'5px','fontFamily':'Helvetica,sans-serif'}),
                 html.Div([
                     dcc.Checklist(
                     id='country_picker_1',
@@ -118,7 +118,7 @@ app.layout = html.Div(
                         {'label': 'USA', 'value': 'US'}
                     ],
                     value=['CA', 'US'],
-                    style={'display':'flex', 'justifyContent':'center','color':txcolor}),
+                    style={'display':'flex', 'justifyContent':'center','color':txcolor,'fontFamily':'Helvetica,sans-serif'}),
                     ]),
 
                 html.Div([
@@ -128,7 +128,7 @@ app.layout = html.Div(
                         ),
                     ],style={'width':'100%'}),
 
-                ],style={'width':'50%',"border":"1px grey solid",'padding':'10px','margin':'10px','margin-right':'5px','border-radius':'5px'}
+                ],style={'width':'50%',"border":"1px grey solid",'padding':'10px','margin':'10px','margin-right':'5px','border-radius':'5px','fontFamily':'Helvetica,sans-serif'}
             ),
 
             html.Div([
@@ -154,7 +154,7 @@ app.layout = html.Div(
                         value='Orders with SmartFit',
                         clearable = False
                         ),
-                    ],style={'width':'40%','margin': '0 auto','margin-bottom':'5px'}),
+                    ],style={'width':'40%','margin': '0 auto','margin-bottom':'5px','fontFamily':'Helvetica,sans-serif'}),
                 html.Div([
                     dcc.Checklist(
                     id='country_picker_2',
@@ -163,7 +163,7 @@ app.layout = html.Div(
                         {'label': 'USA', 'value': 'US'}
                     ],
                     value=['CA', 'US'],
-                    style={'display':'flex', 'justifyContent':'center','color':txcolor}),
+                    style={'display':'flex', 'justifyContent':'center','color':txcolor,'fontFamily':'Helvetica,sans-serif'}),
                     ]),
 
                 html.Div([
@@ -171,11 +171,11 @@ app.layout = html.Div(
                         id = 'pie_chart_2',
                         config = {'displayModeBar': 'hover'},
                         ),
-                    ],style={'width':'100%'}),
+                    ],style={'width':'100%','fontFamily':'Helvetica,sans-serif'}),
 
-                ],style={'width':'50%',"border":"1px grey solid",'padding':'10px','margin':'10px','margin-left':'5px','border-radius':'5px'}
+                ],style={'width':'50%',"border":"1px grey solid",'padding':'10px','margin':'10px','margin-left':'5px','border-radius':'5px','fontFamily':'Helvetica,sans-serif'}
             )
-        ],style={'width':'100%','display':'flex','margin-top':'30px'}),
+        ],style={'width':'100%','display':'flex','margin-top':'30px','fontFamily':'Helvetica,sans-serif'}),
 
         
 
@@ -187,7 +187,7 @@ app.layout = html.Div(
                     {'label': 'USA', 'value': 'US'}
                 ],
                 value=['CA', 'US'],
-                style={'display':'flex', 'justifyContent':'center','margin-top':'10px','color':txcolor}
+                style={'display':'flex', 'justifyContent':'center','margin-top':'10px','color':txcolor,'fontFamily':'Helvetica,sans-serif'}
                 ),
             
             html.Div([
@@ -195,12 +195,12 @@ app.layout = html.Div(
                     id = 'bar-chart',
                     config = {'displayModeBar': 'hover'},
                     ),],
-                style={'width':'100%','display':'inline-block'}
+                style={'width':'100%','display':'inline-block','fontFamily':'Helvetica,sans-serif'}
                 )
-            ],style={"border":"1px grey solid",'padding':'0px','margin':'10px','margin-top':'0px','border-radius':'5px'})
+            ],style={"border":"1px grey solid",'padding':'0px','margin':'10px','margin-top':'0px','border-radius':'5px','fontFamily':'Helvetica,sans-serif'})
 
     ],
-    style={"background-color": bgcolor,'margin':'10px'},
+    style={"background-color": bgcolor,'margin':'10px','fontFamily':'Helvetica,sans-serif'},
 )
 
 
@@ -214,7 +214,7 @@ def update_df(start_date,end_date):
     df = get_dataframe(start_date,end_date,'shopifydata',engine)
     print(df.head())
     df_json = df.to_json(orient="split")
-    return df_json, date.today()+timedelta(days=1), 'Showing data from XXXX to XXXX'
+    return df_json, date.today()+timedelta(days=1), 'Displaying data from {} to {}'.format(start_date, end_date)
 
 @app.callback(
     Output("bar-chart", "figure"),
@@ -278,7 +278,7 @@ def update_prov_table(country_3,start_date,end_date,df_json):
                 'xanchor': 'center',
                 'yanchor': 'top'},
             font = dict(
-                family = "sans-serif",
+                family = "Helvetica,sans-serif",
                 size = 12,
                 color = txcolor),
             legend = {
