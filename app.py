@@ -1,7 +1,5 @@
-import base64
-import os
-from urllib.parse import quote as urlquote
 import datetime
+from datetime import date,datetime, timedelta
 from flask import Flask, send_from_directory
 import dash
 import dash_core_components as dcc
@@ -10,15 +8,10 @@ from dash.dependencies import Input, Output, State
 import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
-import plotly.express as px
-from datetime import timedelta
-import dash_table
 import requests
 import json
-import dateutil.parser as parser
-from datetime import date,datetime, timedelta
 import os
-from request_test import get_dataframe
+from helpers import get_dataframe, build_piechart, process_df
 
 # Shopify API credentials
 CA_key = os.getenv('CA_key')
@@ -194,269 +187,13 @@ app.layout = html.Div(
     style={"background-color": bgcolor,'margin':'10px'},
 )
 
-def build_piechart(labels,values,text):
-
-    pie = { #Number of orders
-            'data': [go.Pie(labels = labels,
-                            values = values,
-                            marker = dict(colors = colors),
-                            hoverinfo = 'label+value+percent',
-                            textinfo = 'label+value',
-                            textfont = dict(size = 13),
-                            texttemplate = '%{label}: %{value:,f} <br>(%{percent})',
-                            textposition = 'inside',
-                            # hole = .7,
-                            rotation = 90
-                            # insidetextorientation='radial',
-
-                            )],
-
-            'layout': go.Layout(
-                #width=800,
-                #height=520,
-                plot_bgcolor = bgcolor,
-                paper_bgcolor = bgcolor,
-                hovermode = 'x',
-                title = {
-                    'text': text,
-
-                    'y': 0.9,
-                    'x': 0.5,
-                    'xanchor': 'center',
-                    'yanchor': 'top'},
-
-                titlefont = {
-                    'color': txcolor,
-                    'size': 15},
-                legend = {
-                    'orientation': 'h',
-                    'bgcolor': bgcolor,
-                    'xanchor': 'center', 'x': 0.5, 'y': -0.05},
-                font = dict(
-                    family = "sans-serif",
-                    size = 12,
-                    color = txcolor)
-            ),
-
-        }
-
-    return pie
-
-def process_df(df,CA=True, US=True):
-    
-    if CA == False:
-        df = df[df['currency']!='CAD']
-    if US == False:
-        df = df[df['currency']!='USD']
-
-
-    # remove time infomrmation from date
-    df['created_at'] = pd.to_datetime(df['created_at']).apply(lambda x: x.date())
-    
-    # How many total_price orders?
-    qty_all_orders = len(df)
-
-    #remove exchanges
-    df_temp=df[df["discount_code"].str.contains('exchange',na=False,case=False)==False]
-
-    #convert total price to float
-    df_temp['total_price'] = pd.to_numeric(df_temp['total_price'], downcast="float")
-
-    #count free orders and remove free items
-    qty_giveaways=len(df_temp[df_temp["total_price"]==0.00])
-    df_temp=df_temp[df_temp["total_price"]!=0.00]
-
-    #How many orders have a SmartFit?
-    Smartfit_order_count = 0
-    for index, row in df_temp.iterrows():
-        product_list = row['product']
-        if any('SmartFit' in product for product in product_list):
-            Smartfit_order_count+=1
-
-     # How many in each country?
-    Country_CA = len(df_temp[df_temp['currency']=='CAD'])
-    Country_US = len(df_temp[df_temp['currency']=='USD'])
-    
-    # How many are pre-orders?
-    PreOrder_yes=len(df_temp[df_temp['tags']=='pre-order'])
-    PreOrder_no=len(df_temp)-PreOrder_yes
-
-    # total_prices sales in $
-    df_usd = df_temp[df_temp['currency']=='USD']
-    df_cad = df_temp[df_temp['currency']=='CAD']
-
-    total_price_sales_usd = '${:,.2f}'.format(df_usd['total_price'].sum())
-    total_price_sales_cad = '${:,.2f}'.format(df_cad['total_price'].sum())
-
-    # How many sales orders?
-    qty_sales_orders = len(df_temp)
-
-    # How many sales orders without Smartfit?
-    No_Smartfit_order_count = qty_sales_orders-Smartfit_order_count
-
-    # How many of products sold (without exchanges/giveaways)?
-    all_products_sold = []
-    for index, row in df_temp.iterrows():
-        product_list = row['product']
-        for item in product_list:
-            all_products_sold.append(item)
-
-    # How many of products sold (without exchanges/giveaways)?
-    all_products_sold_exchanged_given = []
-    for index, row in df.iterrows():
-        product_list =  row['product']
-        for item in product_list:
-            all_products_sold_exchanged_given.append(item)
-
-    # how many utility
-    Utility_list_all_sizes = []
-    for item in all_products_sold:
-        if 'Utility' in item:
-            Utility_list_all_sizes.append(item)
-
-    qty_utility_sold = len(Utility_list_all_sizes)
-
-    # How many of each color - utility
-    utility_color_dict={}
-    for color in utility_colors:
-        utility_color_dict[color]=0
-        for item in Utility_list_all_sizes:
-            if color in item:
-                utility_color_dict[color]+=1
-
-
-    # How many men's/Women's utility
-    utility_size_dict = {"Mens":0,"Womens":0}
-    for item in Utility_list_all_sizes:
-        size = item.split('Mens')[1][1:5]
-        size = size.replace(" ","")
-        size = size.replace("/","")
-        size=float(size)
-        if size > 8:
-            utility_size_dict["Mens"]+=1
-        else:utility_size_dict["Womens"]+=1
-
-    # How many knit
-    AvroKnit_list_all_sizes = []
-    for item in all_products_sold:
-        if 'Knit' in item:
-            AvroKnit_list_all_sizes.append(item)
-
-    qty_knit_sold = len(AvroKnit_list_all_sizes)
-
-    # How many of each color - Knit
-    knit_color_dict={}
-    for color in knit_colors:
-        knit_color_dict[color]=0
-        for item in AvroKnit_list_all_sizes:
-            if color != 'Black':
-                if color in item:
-                    knit_color_dict[color]+=1
-            else:
-                if color in item and "Space Black" not in item:
-                    knit_color_dict[color]+=1
-
-    # How many men's/Women's knit
-    knit_size_dict = {"Mens":0,"Womens":0}
-    for item in AvroKnit_list_all_sizes:
-        size = item.split('Mens')[1][1:5]
-        size = size.replace(" ","")
-        size = size.replace("/","")
-        size=float(size)
-        if size > 8:
-            knit_size_dict["Mens"]+=1
-        else:knit_size_dict["Womens"]+=1
-
-    # How many Leather
-    AvroLeather_list_all_sizes = []
-    for item in all_products_sold:
-        if 'Leather' in item:
-            AvroLeather_list_all_sizes.append(item)
-
-    qty_leather_sold = len(AvroLeather_list_all_sizes)
-
-    shoes_sold = qty_leather_sold+qty_knit_sold+qty_utility_sold
-
-    # How many of each color - Leather
-    leather_color_dict={}
-    for color in leather_colors:
-        leather_color_dict[color]=0
-        for item in AvroLeather_list_all_sizes:
-            if color != 'Black':
-                if color in item:
-                    leather_color_dict[color]+=1
-            else:
-                if color in item and "Space Black" not in item:
-                    leather_color_dict[color]+=1
-
-    # How many men's/Women's leather
-    leather_size_dict = {"Mens":0,"Womens":0}
-    for item in AvroLeather_list_all_sizes:
-        size = item.split('Mens')[1][1:5]
-        size = size.replace(" ","")
-        size = size.replace("/","")
-        size=float(size)
-        if size > 8:
-            leather_size_dict["Mens"]+=1
-        else:leather_size_dict["Womens"]+=1
-
-    #How many Smartfit
-    SmartFit_list= []
-    for item in all_products_sold:
-        if 'SmartFit' in item:
-            SmartFit_list.append(item)
-        elif 'FootB' in item:
-            SmartFit_list.append(item)
-
-    qty_smartfit_sold = len(SmartFit_list)
-
-    #How many Kepler
-    Kelper_list_all_sizes= []
-    for item in all_products_sold:
-        if 'Kepler' in item:
-            Kelper_list_all_sizes.append(item)
-
-    qty_kepler_sold = len(Kelper_list_all_sizes)
-
-    #How many Pascal
-    Pascal_list_all_sizes= []
-    for item in all_products_sold:
-        if 'Pascal' in item:
-            Pascal_list_all_sizes.append(item)
-
-    qty_pascal_sold = len(Pascal_list_all_sizes)
-
-    #Many Gift card
-    Giftcard_list_all_sizes= []
-    for item in all_products_sold:
-        if 'Gift' in item:
-            Giftcard_list_all_sizes.append(item)
-
-    qty_giftcard_sold = len(Giftcard_list_all_sizes)
-
-    #How many have discounts
-    discount_code_qty_dict={}
-    for item in discount_codes_of_interest:
-        discount_code_qty_dict[item]=df['discount_code'].str.contains(str(item), case=False, na=False).sum()
-
-    discount_code_qty_dict['cascacreator']+= df['discount_code'].str.contains('casca creator', case=False, na=False).sum()
-    qty_nodiscount = df['discount_code'].isnull().sum()
-    discount_code_qty_dict['No Discount'] = qty_nodiscount
-    qty_otherdiscount = len(df)-sum(discount_code_qty_dict.values())
-    discount_code_qty_dict['Other Discount'] = qty_otherdiscount
-
-    # how many in store?
-    Retail_store = len(df_temp[df_temp['location_id']==15103557690])
-    Online = len(df_temp) - Retail_store
-
-    return leather_color_dict,leather_size_dict,knit_color_dict,knit_size_dict,utility_color_dict,utility_size_dict,qty_all_orders,qty_giveaways,Smartfit_order_count,Country_CA,Country_US,PreOrder_yes,PreOrder_no,total_price_sales_usd,total_price_sales_cad,qty_sales_orders,No_Smartfit_order_count,qty_utility_sold,qty_knit_sold,qty_leather_sold,shoes_sold,qty_smartfit_sold,qty_kepler_sold,qty_pascal_sold,qty_giftcard_sold,discount_code_qty_dict,Retail_store,Online
 
 @app.callback(
     Output('intermediate-value', 'children'),
     Input("date_range", "start_date"),
     Input("date_range", "end_date"))
 def update_df(start_date,end_date):
-    df = get_dataframe(start_date,end_date,CA=True,US=True)
+    df = get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass)
     df_json = df.to_json(orient="split")
     return df_json
 
@@ -554,7 +291,7 @@ def update_graph(country_1,start_date,end_date,dropdown_value_1,df_json):
         US=True
     else: US=False
 
-    leather_color_dict,leather_size_dict,knit_color_dict,knit_size_dict,utility_color_dict,utility_size_dict,qty_all_orders,qty_giveaways,Smartfit_order_count,Country_CA,Country_US,PreOrder_yes,PreOrder_no,total_price_sales_usd,total_price_sales_cad,qty_sales_orders,No_Smartfit_order_count,qty_utility_sold,qty_knit_sold,qty_leather_sold,shoes_sold,qty_smartfit_sold,qty_kepler_sold,qty_pascal_sold,qty_giftcard_sold,discount_code_qty_dict,Retail_store,Online=process_df(df,CA,US)
+    leather_color_dict,leather_size_dict,knit_color_dict,knit_size_dict,utility_color_dict,utility_size_dict,qty_all_orders,qty_giveaways,Smartfit_order_count,Country_CA,Country_US,PreOrder_yes,PreOrder_no,total_price_sales_usd,total_price_sales_cad,qty_sales_orders,No_Smartfit_order_count,qty_utility_sold,qty_knit_sold,qty_leather_sold,shoes_sold,qty_smartfit_sold,qty_kepler_sold,qty_pascal_sold,qty_giftcard_sold,discount_code_qty_dict,Retail_store,Online=process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_interest,CA,US)
     
 
     pie_chart_dict = {
@@ -638,7 +375,7 @@ def update_graph(country_1,start_date,end_date,dropdown_value_1,df_json):
     labels_1 = pie_chart_dict[dropdown_value_1]['labels']
     values_1 = pie_chart_dict[dropdown_value_1]['values']
     text_1 = pie_chart_dict[dropdown_value_1]['text']
-    result_1 = build_piechart(labels_1,values_1,text_1)
+    result_1 = build_piechart(labels_1,values_1,text_1,colors,bgcolor,txcolor)
 
     return result_1
 
@@ -660,7 +397,7 @@ def update_graph(country_2,start_date,end_date,dropdown_value_2, df_json):
         US=True
     else: US=False
 
-    leather_color_dict,leather_size_dict,knit_color_dict,knit_size_dict,utility_color_dict,utility_size_dict,qty_all_orders,qty_giveaways,Smartfit_order_count,Country_CA,Country_US,PreOrder_yes,PreOrder_no,total_price_sales_usd,total_price_sales_cad,qty_sales_orders,No_Smartfit_order_count,qty_utility_sold,qty_knit_sold,qty_leather_sold,shoes_sold,qty_smartfit_sold,qty_kepler_sold,qty_pascal_sold,qty_giftcard_sold,discount_code_qty_dict,Retail_store,Online=process_df(df,CA,US)
+    leather_color_dict,leather_size_dict,knit_color_dict,knit_size_dict,utility_color_dict,utility_size_dict,qty_all_orders,qty_giveaways,Smartfit_order_count,Country_CA,Country_US,PreOrder_yes,PreOrder_no,total_price_sales_usd,total_price_sales_cad,qty_sales_orders,No_Smartfit_order_count,qty_utility_sold,qty_knit_sold,qty_leather_sold,shoes_sold,qty_smartfit_sold,qty_kepler_sold,qty_pascal_sold,qty_giftcard_sold,discount_code_qty_dict,Retail_store,Online=process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_interest,CA,US)
     
 
     pie_chart_dict = {
@@ -744,7 +481,7 @@ def update_graph(country_2,start_date,end_date,dropdown_value_2, df_json):
     labels_2 = pie_chart_dict[dropdown_value_2]['labels']
     values_2 = pie_chart_dict[dropdown_value_2]['values']
     text_2 = pie_chart_dict[dropdown_value_2]['text']
-    result_2 = build_piechart(labels_2,values_2,text_2)
+    result_2 = build_piechart(labels_2,values_2,text_2,colors,bgcolor,txcolor)
 
     return result_2
 
