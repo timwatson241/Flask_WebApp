@@ -84,6 +84,7 @@ app.layout = html.Div(
                             {'label': 'Avro Leather Genders', 'value': 'Avro Leather Genders'},
                             {'label': 'Avro Knit Colors', 'value': 'Avro Knit Colors'},
                             {'label': 'Avro Knit Genders', 'value': 'Avro Knit Genders'},
+                            {'label': 'Avro Utility Colors', 'value': 'Avro Utility Colors'},
                             {'label': 'Avro Utility Genders', 'value': 'Avro Utility Genders'},
                             {'label': 'Discounts Issued', 'value': 'Discounts Issued'},
                             {'label': 'Pre-Orders', 'value': 'Pre-Orders'},
