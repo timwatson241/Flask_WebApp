@@ -1,0 +1,283 @@
+,name,email,created_at,currency,product,tags,id,location_id,total_price,province_code,discount_code,discount_amount
+0,SMALLSTEP3328,marshall.berkin@gmail.com,2021-01-01T12:10:46-08:00,CAD,['Avro - Black Leather / US / Mens 9 / Womens 11'],,3184682270920,,255.36,BC,,0
+1,SMALLSTEP3329,mickee3000@hotmail.com,2021-01-02T13:39:35-08:00,CAD,"['SmartFit™', 'Avro Utility - Aluminum Utility / US / Mens 8.5 / Womens 10.5']",pre-order,3186291114184,,365.12,BC,,0
+2,SMALLSTEP3330,lwsdyson@gmail.com,2021-01-02T13:54:28-08:00,CAD,"['Avro - Ceramic White Leather / US / Mens 10.5 / Womens 12.5', 'SmartFit™']",,3186308907208,15103557690,146.72,,Discount,175.00
+3,SMALLSTEP3331,davidcrouch1@mac.com,2021-01-02T18:57:40-08:00,CAD,['Avro Knit - Clay Blue Knit / US / Mens 9 / Womens 11'],,3186587435208,,201.14,ON,ENDLESSFLIGHTHLQM8M9D,20.00
+4,SMALLSTEP3332,jodiesigouin@gmail.com,2021-01-03T13:10:06-08:00,CAD,['Avro Utility - Aluminum Utility / US / Mens 5.5 / Womens 7.5'],pre-order,3187589415112,,255.36,BC,ENDLESSFLIGHTQPJDB9LH,20.00
+5,SMALLSTEP3333,kiyomi.j.okabe@gmail.com,2021-01-03T13:33:09-08:00,CAD,['Avro Knit - Space Black Knit Black Sole / US / Mens 5.5 / Womens 7.5'],,3187616055496,15103557690,199.36,,,0
+6,SMALLSTEP3334,s.burton.matthews@gmail.com,2021-01-03T15:19:36-08:00,CAD,['Avro Knit - Light Grey Knit / US / Mens 5.5 / Womens 7.5'],,3187722846408,15103557690,221.76,,,0
+7,SMALLSTEP3335,sunny.hahm@gmail.com,2021-01-03T20:15:01-08:00,CAD,['Avro Utility - Aluminum Utility / US / Mens 9.5 / Womens 11.5'],pre-order,3187993411784,,277.76,BC,,0
+8,SMALLSTEP3336,s.burton.matthews@gmail.com,2021-01-05T14:11:34-08:00,CAD,['Avro Knit - Light Grey Knit / US / Mens 5.5 / Womens 7.5'],,3190854451400,,0.00,BC,store sale,198.00
+9,SMALLSTEP3337,,2021-01-05T14:17:55-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 7 / Womens 9'],,3190861955272,,0.00,ON,casca creator,228.00
+10,SMALLSTEP3338,gmahony@mahonyandsons.com,2021-01-06T17:17:31-08:00,CAD,['Avro - Light Grey Leather / US / Mens 9.5 / Womens 11.5'],,3192569299144,15103557690,31.36,,Discount,200.00
+11,SMALLSTEP3339,tstephens@qmed.ca,2021-01-07T11:20:56-08:00,CAD,['Avro - Titanium Leather / US / Mens 10 / Womens 12'],,3193783648456,15103557690,255.36,,,0
+12,SMALLSTEP3340,,2021-01-07T15:31:44-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 9.5 / Womens 11.5'],,3194123354312,,0.00,BC,creator,228.00
+13,SMALLSTEP3341,steve_jody@shaw.ca,2021-01-07T20:59:26-08:00,CAD,['Avro - Light Grey Leather / US / Mens 4.5 / Womens 6.5'],,3194431668424,,255.36,BC,,0
+14,SMALLSTEP2-1972,evanrmumford@gmail.com,2021-01-08T12:24:28-08:00,CAD,"['SmartFit™', 'Avro - Light Grey Leather / US / Mens 11 / Womens 13']",,3196159557832,15103557690,342.72,,,0
+15,SMALLSTEP3343,evanrmumford@gmail.com,2021-01-08T12:25:39-08:00,CAD,['Avro Knit - Wine Knit / US / Mens 11 / Womens 13'],,3196166865096,15103557690,221.76,,,0
+16,SMALLSTEP3344,denisdunlop@icloud.com,2021-01-08T14:35:57-08:00,CAD,['Avro Knit - Light Grey Knit / US / Mens 7 / Womens 9'],,3196528459976,,0.00,ON,exchange,198.00
+17,SMALLSTEP3345,justin5586@gmail.com,2021-01-08T14:41:35-08:00,CAD,['Avro - Black Leather / US / Mens 11 / Womens 13'],,3196539207880,,0.00,ON,exchange ,228.00
+18,SMALLSTEP3346,Grant@cbgteam.com,2021-01-08T14:43:43-08:00,CAD,['Avro - Black Leather / US / Mens 11.5 / Womens 13.5'],,3196542779592,,0.00,BC,Custom discount,228.00
+19,SMALLSTEP3347,raph.lim@gmail.com,2021-01-08T15:15:54-08:00,CAD,"['Avro Knit - Wine Knit / US / Mens 9.5 / Womens 11.5', 'SmartFit™']",,3196606152904,15103557690,0.00,,Discount,276.00
+20,SMALLSTEP3348,llim@shaw.ca,2021-01-08T15:17:00-08:00,CAD,"['Avro Knit - Wine Knit / US / Mens 4.5 / Womens 6.5', 'SmartFit™']",,3196607856840,15103557690,0.00,,Discount,276.00
+21,SMALLSTEP3349,becca.lim11@gmail.com,2021-01-08T15:17:52-08:00,CAD,"['Avro Knit - Wine Knit / US / Mens 4 / Womens 6', 'SmartFit™']",,3196609102024,15103557690,0.00,,Discount,276.00
+22,SMALLSTEP3350,megancdavies@gmail.com,2021-01-09T12:11:52-08:00,CAD,['Avro - Space Black Leather Black Sole / US / Mens 12 / Womens 14'],,3198125342920,15103557690,255.36,,,0
+23,SMALLSTEP3351,s.burton.matthews@gmail.com,2021-01-09T12:57:27-08:00,CAD,['Avro Knit - Light Grey Knit / US / Mens 6 / Womens 8'],,3198196744392,15103557690,0.00,,Discount,198.00
+24,SMALLSTEP3352,t.tess@shaw.ca,2021-01-09T14:23:41-08:00,CAD,['Avro Knit - Ash White Knit / US / Mens 8 / Womens 10'],,3198320378056,15103557690,0.00,,Discount,198.00
+25,SMALLSTEP3353,leviathanz@gmail.com,2021-01-09T16:20:53-08:00,CAD,['Avro Knit - Light Grey Knit / US / Mens 8 / Womens 10'],,3198455185608,,186.90,AB,ENDLESSFLIGHTFC2T2CRF,20.00
+26,SMALLSTEP3354,lillian.pham@icloud.com,2021-01-10T12:28:57-08:00,CAD,['Kepler - Black/Yellow / S-M'],,3199640568008,15103557690,25.76,,,0
+27,SMALLSTEP3355,ghendson@telus.net,2021-01-10T13:52:10-08:00,CAD,['Avro - Black Leather / US / Mens 6 / Womens 8'],,3199745097928,15103557690,255.36,,,0
+28,SMALLSTEP3356,patricklwarren@gmail.com,2021-01-10T15:55:56-08:00,CAD,['Avro - Light Grey Leather / US / Mens 10 / Womens 12'],,3199879119048,15103557690,255.36,,,0
+29,SMALLSTEP3357,shawnaandglen@yahoo.ca,2021-01-12T09:38:11-08:00,CAD,['Avro - Light Grey Leather / US / Mens 7.5 / Womens 9.5'],,3203336962248,,0.00,BC,Custom discount,228.00
+30,SMALLSTEP3358,elliottforce@hotmail.com,2021-01-13T11:59:23-08:00,CAD,['Avro Knit - Light Grey Knit / US / Mens 9.5 / Womens 11.5'],,3205486903496,,166.33,BC,48HRS,49.50
+31,SMALLSTEP3359,mail.ritachiu@gmail.com,2021-01-13T12:55:56-08:00,CAD,"['Avro Knit - Wine Knit / US / Mens 8.5 / Womens 10.5', 'Avro - Sand Leather / US / Mens 4 / Womens 6', 'SmartFit™']",,3205567217864,15103557690,651.84,,,0
+32,SMALLSTEP3360,adrienneneufeld1@gmail.com,2021-01-13T16:32:43-08:00,CAD,"['SmartFit™', 'Avro Knit - Ash White Knit / US / Mens 6.5 / Womens 8.5']",,3205819531464,,0.00,BC,CascaCreator,276.00
+33,SMALLSTEP3361,thomasthorney@aol.com,2021-01-14T07:23:40-08:00,CAD,"['SmartFit™', 'Avro Knit - Ash White Knit / US / Mens 10 / Womens 12']",,3206733201608,,311.88,ON,,0
+34,SMALLSTEP3362,imaane.b@hotmail.com,2021-01-14T13:06:14-08:00,CAD,['Avro - Sand Leather / US / Mens 9 / Womens 11'],,3207218626760,,207.90,QC,FR-B6Q8fl40R3CjZdEz,30.00
+35,SMALLSTEP3363,joebinicki@gmail.com,2021-01-14T16:56:21-08:00,CAD,['Avro Knit - Ash White Knit / US / Mens 13 / Womens 15'],,3207499776200,,227.70,NS,,0
+36,SMALLSTEP3364,,2021-01-15T12:23:51-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 6 / Womens 8'],,3209132015816,,0.00,BC,CascaCreator,228.00
+37,SMALLSTEP3365,jepoks@hotmail.com,2021-01-15T16:13:06-08:00,CAD,['Avro Utility - Aluminum Utility / US / Mens 4.5 / Womens 6.5'],pre-order,3209440821448,,255.36,BC,ENDLESSFLIGHTTDCS9ZBF,20.00
+38,SMALLSTEP3366,wiebetina@gmail.com,2021-01-16T11:38:45-08:00,CAD,['Avro Knit - Ash White Knit / US / Mens 8 / Womens 10'],,3210665984200,,186.90,AB,ENDLESSFLIGHTD2LLGLTX,20.00
+39,SMALLSTEP3367,ddringrose@telus.net,2021-01-16T12:45:38-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 7 / Womens 9'],,3210758062280,15103557690,255.36,,,0
+40,SMALLSTEP3368,ddringrose@telus.net,2021-01-16T12:50:15-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 7 / Womens 9'],,3210764222664,,255.36,BC,,0
+41,SMALLSTEP3369,poon.michael@gmail.com,2021-01-16T13:08:16-08:00,CAD,"['Avro - Black Leather / US / Mens 11 / Womens 13', 'SmartFit™']",,3210788536520,15103557690,342.72,,,0
+42,SMALLSTEP3370,kirsti_glb@hotmail.com,2021-01-16T13:45:21-08:00,CAD,"['SmartFit™', 'Avro Knit - Ash White Knit / US / Mens 8 / Womens 10']",,3210836508872,,309.12,BC,,0
+43,SMALLSTEP3371,l.matthews27@hotmail.com,2021-01-16T14:14:37-08:00,CAD,['Avro - Black Leather / US / Mens 10 / Womens 12'],,3210874028232,15103557690,0.00,,Discount,228.00
+44,SMALLSTEP3372,saud@telus.net,2021-01-16T14:58:53-08:00,CAD,"['SmartFit™', 'Avro - Light Grey Leather / US / Mens 6 / Womens 8']",,3210921443528,,342.72,BC,,0
+45,SMALLSTEP3373,shoaib.ansari@outlook.com,2021-01-16T15:14:22-08:00,CAD,"['SmartFit™', 'Avro - Titanium Leather / US / Mens 8 / Womens 10']",,3210936451272,,342.72,BC,,0
+46,SMALLSTEP3374,shoaib.ansari@outlook.com,2021-01-16T15:15:42-08:00,CAD,"['Avro - Titanium Leather / US / Mens 8 / Womens 10', 'SmartFit™']",,3210937893064,15103557690,0.00,,Discount,306.00
+47,SMALLSTEP3375,colin.lam@live.com,2021-01-16T15:50:16-08:00,CAD,['Avro - Sand Leather / US / Mens 10 / Womens 12'],,3210970235080,,255.36,BC,,0
+48,SMALLSTEP3376,colin.lam@live.com,2021-01-16T15:51:37-08:00,CAD,['Avro - Sand Leather / US / Mens 10 / Womens 12'],,3210971513032,15103557690,0.00,,Discount,228.00
+49,SMALLSTEP3377,mseppelt@shaw.ca,2021-01-17T14:36:49-08:00,CAD,['Gift Card'],,3212318769352,15103557690,87.36,,,0
+50,SMALLSTEP3378,mseppelt@shaw.ca,2021-01-17T14:39:57-08:00,CAD,['Avro - Black Leather / US / Mens 6 / Womens 8'],,3212321718472,15103557690,157.51,,Discount,87.36
+51,SMALLSTEP3379,sophie.schlagintweit@gmail.com,2021-01-17T15:00:24-08:00,CAD,['Avro - Black Leather / US / Mens 9 / Womens 11'],,3212342100168,15103557690,255.36,,,0
+52,SMALLSTEP3380,sammiechan12@gmail.com,2021-01-17T15:09:29-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 5.5 / Womens 7.5'],,3212349964488,15103557690,255.36,,,0
+53,SMALLSTEP3381,sofie.schlagintweit@gmail.com,2021-01-17T15:25:47-08:00,CAD,['Avro - Black Leather / US / Mens 9 / Womens 11'],,3212364611784,15103557690,0.00,,Discount,228.00
+54,SMALLSTEP3382,ghcasey4@gmail.com,2021-01-17T15:53:09-08:00,CAD,['Avro Knit - Black Knit / US / Mens 11 / Womens 13'],,3212390990024,15103557690,221.76,,,0
+55,SMALLSTEP3383,colinreyrmt@gmail.com,2021-01-17T16:13:04-08:00,CAD,['Avro Knit - Ash White Knit / US / Mens 8.5 / Womens 10.5'],,3212408881352,15103557690,221.76,,,0
+56,SMALLSTEP3384,renwick@telus.net,2021-01-18T09:36:56-08:00,CAD,['Avro Knit - Light Grey Knit / US / Mens 5.5 / Womens 7.5'],,3213547864264,,0.00,BC,EXCHANGE,198.00
+57,SMALLSTEP3385,steve_jody@shaw.ca,2021-01-18T11:06:06-08:00,CAD,['Avro - Light Grey Leather / US / Mens 5 / Womens 7'],,3213668581576,,0.00,BC,exchange,228.00
+58,SMALLSTEP3386,sfball@telus.net,2021-01-18T12:08:28-08:00,CAD,['Avro - Black Leather / US / Mens 12 / Womens 14'],,3213747814600,,0.00,BC,exchange,228.00
+59,SMALLSTEP3387,,2021-01-18T13:27:45-08:00,CAD,['Avro - Sand Leather / US / Mens 3 / Womens 5'],,3213842743496,,0.00,ON,cascacreator,228.00
+60,SMALLSTEP3388,david.lodovica@gmail.com,2021-01-18T13:59:18-08:00,CAD,['Avro - Light Grey Leather / US / Mens 11.5 / Womens 13.5'],,3213877838024,,218.40,AB,ENDLESSFLIGHTH2BW6F6L,20.00
+61,SMALLSTEP3389,,2021-01-20T13:27:00-08:00,CAD,['Pascal - Black/Yellow / L-XL'],,3217821106376,15103557690,20.16,,,0
+62,SMALLSTEP3390,robyn+test@casca.com,2021-01-20T14:46:57-08:00,CAD,['Avro - Black Leather / US / Mens 3.5 / Womens 5.5'],,3217951523016,,0.00,AB,Custom discount,228.00
+63,SMALLSTEP3391,robynkpalmer@gmail.com,2021-01-20T15:42:44-08:00,CAD,['Avro - Sand Leather / US / Mens 11.5 / Womens 13.5'],pre-order,3218049106120,,0.00,AB,ROBYNTEST!@#,228.00
+64,SMALLSTEP3392,kpalla@shaw.ca,2021-01-20T22:12:02-08:00,CAD,['Avro Knit - Black Knit / US / Mens 12 / Womens 14'],,3218775736520,,199.36,BC,ENDLESSFLIGHT74ZXM9RS,20.00
+65,SMALLSTEP3393,,2021-01-21T12:58:16-08:00,CAD,['Avro - Light Grey Leather / US / Mens 13 / Womens 15'],,3219995263176,8453685306,0.00,,Fluted Insole test,228.00
+66,SMALLSTEP3394,robynkpalmer@gmail.com,2021-01-22T10:59:31-08:00,CAD,['Avro Knit - Moss Knit / US / Mens 13.5 / Womens 15.5'],pre-order,3221387706568,,0.00,AB,ROBYNTEST!@#,198.00
+67,SMALLSTEP3395,jhitkari@olivefertility.com,2021-01-22T14:03:51-08:00,CAD,"['Avro - Space Black Leather Black Sole / US / Mens 10.5 / Womens 12.5', 'SmartFit™']",,3221690581192,8453685306,320.32,BC,Custom discount,20.00
+68,SMALLSTEP3396,robynkpalmer@gmail.com,2021-01-22T14:10:19-08:00,CAD,"['Avro Knit - Charcoal Knit / US / Mens 9 / Womens 11', 'Avro - Navy Suede Leather / US / Mens 10 / Womens 12', 'Avro Utility - Aluminum Utility / US / Mens 6.5 / Womens 8.5']",pre-order,3221698773192,,0.00,AB,ROBYNTEST!@#,922.00
+69,SMALLSTEP3397,jbagby@outlook.com,2021-01-22T19:48:27-08:00,CAD,"['SmartFit™', 'Avro Knit - Wine Knit / US / Mens 10 / Womens 12']",,3222059417800,,311.88,ON,,0
+70,SMALLSTEP3398,eric92chen@gmail.com,2021-01-23T13:09:35-08:00,CAD,"['Avro Knit - Wine Knit / US / Mens 10 / Womens 12', 'Avro Knit - Ash White Knit / US / Mens 10 / Womens 12']",,3223221108936,15103557690,388.09,,,0
+71,SMALLSTEP3399,drnavid@yahoo.com,2021-01-23T15:14:51-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 10 / Womens 12'],,3223398678728,15103557690,255.36,,,0
+72,SMALLSTEP3400,thidoanvy@gmail.com,2021-01-23T16:50:48-08:00,CAD,['Avro - Black Leather / US / Mens 6 / Womens 8'],,3223490724040,15103557690,255.36,BC,,0
+73,SMALLSTEP3401,robert.smith181@gmail.com,2021-01-24T12:49:03-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 12 / Womens 14'],,3224665751752,,218.40,QC,ENDLESSFLIGHT97RN9RWH,20.00
+74,SMALLSTEP3402,danielsmlee@hotmail.com,2021-01-26T13:29:23-08:00,CAD,['SmartFit™'],,3228564226248,8453685306,0.00,,Custom discount,78.00
+75,SMALLSTEP3403,jjonespho@gmail.com,2021-01-26T18:35:19-08:00,CAD,['Avro Utility - Aluminum Utility / US / Mens 11.5 / Womens 13.5'],pre-order,3228916318408,,277.76,BC,,0
+76,SMALLSTEP3404,michael.buchan@avisonyoung.com,2021-01-27T11:42:14-08:00,CAD,['Avro - Black Leather / US / Mens 9.5 / Womens 11.5'],,3230158946504,,255.36,BC,,0
+77,SMALLSTEP3405,sjaneholbrook@gmail.com,2021-01-27T14:39:32-08:00,CAD,"['Avro Knit - Clay Blue Knit / US / Mens 5.5 / Womens 7.5', 'SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 9 / Womens 11']",,3230378098888,,0.00,AB,exchange,552.00
+78,SMALLSTEP3406,elliottc@live.ca,2021-01-28T12:20:52-08:00,CAD,['Avro - Black Leather / US / Mens 10 / Womens 12'],,3232016826568,,255.36,BC,,0
+79,SMALLSTEP3407,saud@telus.net,2021-01-29T12:17:10-08:00,CAD,"['Avro Knit - Light Grey Knit / US / Mens 6 / Womens 8', 'SmartFit™']",,3233796522184,15103557690,0.00,,Discount,276.00
+80,SMALLSTEP3408,pclough@fishqcl.com,2021-01-29T15:12:12-08:00,CAD,['Avro Knit - Space Black Knit / US / Mens 10.5 / Womens 12.5'],,3234088255688,15103557690,221.76,,,0
+81,SMALLSTEP3409,danielhughes16@gmail.com,2021-01-30T07:12:37-08:00,CAD,['Avro - Black Leather / US / Mens 10.5 / Womens 12.5'],,3235234119880,,262.20,NS,,0
+82,SMALLSTEP3410,nick.englmaier@gmail.com,2021-01-30T12:56:48-08:00,CAD,['Avro - Black Leather / US / Mens 10 / Womens 12'],,3235763454152,15103557690,255.36,,,0
+83,SMALLSTEP3411,court.horne@plenarygroup.com,2021-01-30T16:00:42-08:00,CAD,['Avro Knit - Wine Knit / US / Mens 8.5 / Womens 10.5'],,3235975332040,15103557690,166.33,,Discount,49.50
+84,SMALLSTEP3412,sabgagne@gmail.com,2021-01-30T16:02:39-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 6 / Womens 8'],,3235977134280,15103557690,255.36,,,0
+85,SMALLSTEP3413,danyafox@gmail.com,2021-01-31T12:08:32-08:00,CAD,['Avro - Ceramic White Leather / US / Mens 6 / Womens 8'],,3237161566408,15103557690,255.36,,,0
+86,SMALLSTEP3414,forseywilliam96@gmail.com,2021-01-31T16:41:08-08:00,CAD,['Avro Utility - Aluminum Utility / US / Mens 10.5 / Womens 12.5'],pre-order,3237516181704,,262.20,NS,ENDLESSFLIGHT6WDD8CZJ,20.00
+87,SMALLSTEP3415,sarahpcca@yahoo.com,2021-01-31T16:50:43-08:00,CAD,['Avro Knit - Ash White Knit / US / Mens 4.5 / Womens 6.5'],,3237525291208,15103557690,199.36,,DOCBROWN,20.00
+88,GIANTLEAP2888,ajguido3@gmail.com,2021-01-01T09:53:54-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 9.5 / Womens 11.5'],pre-order,2918917505106,,198.00,VA,,0
+89,GIANTLEAP2889,raj@sevaro.com,2021-01-01T13:47:17-08:00,USD,"['SmartFit™', 'Avro Knit - Space Black Knit Black Sole / US / Mens 9.5 / Womens 11.5']",,2919329890386,,177.00,PA,BRADENLOVESCASCA,59.00
+90,GIANTLEAP2890,dzynr4u@aol.com,2021-01-01T13:54:43-08:00,USD,"['SmartFit™', 'Avro Utility - Aluminum Utility / US / Mens 13 / Womens 15']",pre-order,2919340769362,,276.00,CA,,0
+91,GIANTLEAP2891,kenny41799@yahoo.com,2021-01-01T17:03:07-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 9.5 / Womens 11.5'],,2919624441938,,158.00,AZ,,0
+92,GIANTLEAP2892,hanansuk@gmail.com,2021-01-01T17:58:06-08:00,USD,"['SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 9 / Womens 11']",,2919698792530,,236.00,CA,,0
+93,GIANTLEAP2893,btgregory@mac.com,2021-01-01T21:38:23-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10.5 / Womens 12.5'],,2919962083410,,158.00,TN,,0
+94,GIANTLEAP2894,john_brown82@yahoo.com,2021-01-02T07:23:09-08:00,USD,['Avro - Space Black Leather Black Sole / US / Mens 11.5 / Womens 13.5'],,2920437219410,,178.00,IL,,0
+95,GIANTLEAP2895,dearjake@hey.com,2021-01-03T17:21:53-08:00,USD,['Avro - Ceramic White Leather / US / Mens 10 / Womens 12'],,2922838917202,,168.00,NY,ENDLESSFLIGHTH9CFXZWG,10.00
+96,GIANTLEAP2896,cari28coen@aol.com,2021-01-03T18:19:06-08:00,USD,"['Avro Knit - Light Grey Knit / US / Mens 8.5 / Womens 10.5', 'Avro Knit - Clay Blue Knit / US / Mens 6 / Womens 8']",,2922913398866,,316.00,NY,,0
+97,GIANTLEAP2897,ben.perlman3@gmail.com,2021-01-03T19:43:11-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 9 / Womens 11'],pre-order,2923014160466,,178.00,CA,FR-6fOGFUaPvBznV0GJ,20.00
+98,GIANTLEAP2898,roymar791@gmail.com,2021-01-03T19:52:49-08:00,USD,"['SmartFit™', 'Avro Knit - Space Black Knit Black Sole / US / Mens 7 / Womens 9']",,2923024842834,,236.00,CA,,0
+99,GIANTLEAP2899,doug@thereedhome.com,2021-01-03T20:05:45-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 12 / Womens 14'],pre-order,2923038867538,,198.00,AZ,,0
+100,GIANTLEAP2900,brkstphn@hotmail.com,2021-01-04T05:14:29-08:00,USD,"['Avro - Space Black Leather Black Sole / US / Mens 12 / Womens 14', 'Avro Knit - Space Black Knit Black Sole / US / Mens 12.5 / Womens 14.5']",,2923483136082,,336.00,FL,,0
+101,GIANTLEAP2901,sadadalfakhri@yahoo.com,2021-01-04T09:18:22-08:00,USD,['Avro - Ceramic White Leather / US / Mens 8 / Womens 10'],,2923826380882,,178.00,NC,,0
+102,GIANTLEAP2902,maciej.migalski@pressglass.com,2021-01-04T12:45:48-08:00,USD,['Avro - Black Leather / US / Mens 11.5 / Womens 13.5'],,2924194791506,,178.00,NC,,0
+103,GIANTLEAP2903,jmaste24@student.scad.edu,2021-01-04T14:45:40-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 7.5 / Womens 9.5'],,2924380553298,,0.00,TX,exchange,158.00
+104,GIANTLEAP2904,trevor.guthrie2@gmail.com,2021-01-04T16:42:08-08:00,USD,['Avro - Black Leather / US / Mens 12 / Womens 14'],,2924537905234,,178.00,TN,,0
+105,GIANTLEAP2905,kevinkellner@q.com,2021-01-05T08:12:24-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 12 / Womens 14'],,2925466189906,,148.00,IA,ENDLESSFLIGHTPF49ZMNF,10.00
+106,GIANTLEAP2906,jgross@ojg.com,2021-01-05T08:49:07-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 13 / Womens 15'],,2925513375826,,158.00,NY,,0
+107,GIANTLEAP2907,larsenb1@gmail.com,2021-01-05T09:07:45-08:00,USD,['Avro - Space Black Leather Black Sole / US / Mens 10.5 / Womens 12.5'],,2925538148434,,0.00,WA,exchange ,178.00
+108,GIANTLEAP2908,mytiastacos@gmail.com,2021-01-05T09:51:05-08:00,USD,"['Avro Knit - Space Black Knit Black Sole / US / Mens 9.5 / Womens 11.5', 'Pascal - Black/Yellow / L-XL']",,2925593395282,,0.00,CA,exchange,176.00
+109,GIANTLEAP2909,Cajensen415@gmail.com,2021-01-06T01:50:36-08:00,USD,['Avro Knit - Space Black Knit Black Sole / US / Mens 8.5 / Womens 10.5'],,2926721957970,,158.00,CA,,0
+110,GIANTLEAP2910,navinghaffarian@gmail.com,2021-01-06T06:09:57-08:00,USD,['Avro Knit - Black Knit / US / Mens 10 / Womens 12'],,2926936719442,,158.00,MD,,0
+111,GIANTLEAP2911,ceharper@mac.com,2021-01-06T08:55:34-08:00,USD,"['SmartFit™', 'Avro Utility - Aluminum Utility / US / Mens 11 / Womens 13']",pre-order,2927179858002,,276.00,TX,,0
+112,GIANTLEAP2912,mindyknowlton@yahoo.com,2021-01-06T09:19:29-08:00,USD,"['SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 12.5 / Womens 14.5']",,2927217934418,,236.00,TN,,0
+113,GIANTLEAP2913,amarchegiano5@gmail.com,2021-01-06T11:06:28-08:00,USD,"['Avro - Black Leather / US / Mens 9 / Womens 11', 'Avro Knit - Black Knit / US / Mens 9 / Womens 11']",,2927396323410,,0.00,MD,exchange,336.00
+114,GIANTLEAP2914,whitneyward42@gmail.com,2021-01-06T15:20:28-08:00,USD,"['SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 8 / Womens 10']",,2927776170066,,236.00,OK,,0
+115,GIANTLEAP2915,bgasparakis@gmail.com,2021-01-06T15:34:42-08:00,USD,['Avro Utility - Black Utility / US / Mens 9.5 / Womens 11.5'],pre-order,2927792554066,,198.00,CT,,0
+116,GIANTLEAP2916,jmandell81@gmail.com,2021-01-06T16:30:15-08:00,USD,"['SmartFit™', 'Avro - Light Grey Leather / US / Mens 6.5 / Womens 8.5']",,2927862579282,,256.00,CA,,0
+117,GIANTLEAP2917,brodgers@benusf.com,2021-01-06T21:22:06-08:00,USD,['Avro Knit - Space Black Knit Black Sole / US / Mens 9 / Womens 11'],,2928202317906,,158.00,CA,,0
+118,GIANTLEAP2918,jesse@tellus-global.com,2021-01-07T18:28:20-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 11.5 / Womens 13.5'],,2929817714770,,158.00,CA,,0
+119,GIANTLEAP2919,jvilla7@live.com,2021-01-08T02:56:54-08:00,USD,"['Avro Knit - Black Knit / US / Mens 10 / Womens 12', 'Avro Knit - Ash White Knit / US / Mens 10 / Womens 12']",,2930305531986,,316.00,TN,,0
+120,GIANTLEAP2920,SGMMARTINEZ@GMAIL.COM,2021-01-08T05:07:17-08:00,USD,"['SmartFit™', 'Avro - Black Leather / US / Mens 9 / Womens 11']",,2930416386130,,256.00,NC,,0
+121,GIANTLEAP2921,grimm.elizabeth@gmail.com,2021-01-08T09:42:02-08:00,USD,"['SmartFit™', 'Avro - Black Leather / US / Mens 8.5 / Womens 10.5']",,2930779848786,,256.00,TX,,0
+122,GIANTLEAP2922,dcahill5114@gmail.com,2021-01-08T14:52:26-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 8.5 / Womens 10.5'],,2931265667154,,0.00,FL,exchange,158.00
+123,GIANTLEAP2923,lmohren@Gmail.com,2021-01-08T14:59:50-08:00,USD,['Avro - Light Grey Leather / US / Mens 11 / Womens 13'],pre-order,2931275759698,,0.00,LA,warranty exchange,178.00
+124,GIANTLEAP2924,rklombard@hotmail.com,2021-01-08T18:58:17-08:00,USD,['Avro Knit - Black Knit / US / Mens 12 / Womens 14'],,2931573358674,,158.00,MA,,0
+125,GIANTLEAP2925,freddy@loansbyfreddy.com,2021-01-08T22:08:34-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10.5 / Womens 12.5'],,2931764265042,,158.00,TX,,0
+126,GIANTLEAP2926,freddy@loansbyfreddy.com,2021-01-08T22:11:11-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 13 / Womens 15'],,2931769049170,,148.00,TX,ENDLESSFLIGHT59RBZR2J,10.00
+127,GIANTLEAP2927,torchpowers@gmail.com,2021-01-09T06:08:52-08:00,USD,['Avro - Black Leather / US / Mens 9.5 / Womens 11.5'],,2932122386514,,178.00,TN,,0
+128,GIANTLEAP2928,victorb@cci-gc.com,2021-01-09T08:44:17-08:00,USD,['Avro Utility - Black Utility / US / Mens 11.5 / Womens 13.5'],pre-order,2932319879250,,198.00,CA,,0
+129,GIANTLEAP2929,tatkrazy@gmail.com,2021-01-09T10:02:11-08:00,USD,"['SmartFit™', 'Avro Knit - Ash White Knit / US / Mens 5.5 / Womens 7.5']",,2932431355986,,236.00,CA,,0
+130,GIANTLEAP2930,leroylacyjr@aol.com,2021-01-09T10:42:28-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 12 / Womens 14'],,2932493811794,,148.00,TX,ENDLESSFLIGHTD3V6XM7K,10.00
+131,GIANTLEAP2931,kelleylt33@gmail.com,2021-01-09T10:47:02-08:00,USD,['Avro - Ceramic White Leather / US / Mens 4.5 / Womens 6.5'],,2932500070482,,178.00,MA,,0
+132,GIANTLEAP2932,thyronjs@gmail.com,2021-01-09T13:23:54-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 11 / Womens 13'],pre-order,2932742783058,,198.00,WA,,0
+133,GIANTLEAP2933,ron@qualityexpresscarcarecenter.com,2021-01-09T14:04:59-08:00,USD,['Avro - Black Leather / US / Mens 13 / Womens 15'],,2932796817490,,178.00,MI,,0
+134,GIANTLEAP2934,agonzalezschb575@gmail.com,2021-01-09T14:40:17-08:00,USD,['Avro - Light Grey Leather / US / Mens 12 / Womens 14'],,2932846821458,,178.00,TX,,0
+135,GIANTLEAP2935,russ@rokwood.com,2021-01-09T15:44:14-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 11 / Womens 13'],,2932933886034,,158.00,ID,,0
+136,GIANTLEAP2936,ppayonk@hrpliving.com,2021-01-10T08:00:13-08:00,USD,"['Avro Utility - Aluminum Utility / US / Mens 9.5 / Womens 11.5', 'Avro Utility - Aluminum Utility / US / Mens 9 / Womens 11']",pre-order,2934220554322,,396.00,NC,,0
+137,GIANTLEAP2937,keith@o3world.com,2021-01-10T10:07:05-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 8 / Womens 10'],,2934398484562,,158.00,FL,,0
+138,GIANTLEAP2938,preston.hanlon@icloud.com,2021-01-10T10:52:35-08:00,USD,['Avro Knit - Black Knit / US / Mens 10 / Womens 12'],,2934470705234,,158.00,CA,,0
+139,GIANTLEAP2939,tylerdritz@yahoo.com,2021-01-10T12:29:15-08:00,USD,"['Avro Utility - Black Utility / US / Mens 12 / Womens 14', 'Avro Utility - Aluminum Utility / US / Mens 12 / Womens 14']",pre-order,2934630318162,,396.00,CA,,0
+140,GIANTLEAP2940,Ethanh702@gmail.com,2021-01-11T00:05:16-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 10 / Womens 12'],pre-order,2935541203026,,198.00,NV,,0
+141,GIANTLEAP2941,tecuanhuey@comcast.net,2021-01-11T00:44:23-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10.5 / Womens 12.5'],,2935570825298,,158.00,IL,,0
+142,GIANTLEAP2942,neuensa123@gmail.com,2021-01-11T04:04:25-08:00,USD,['Avro Utility - Black Utility / US / Mens 12.5 / Womens 14.5'],pre-order,2935721689170,,198.00,OH,,0
+143,GIANTLEAP2943,christophermay1975@gmail.com,2021-01-11T04:38:19-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 12 / Womens 14'],,2935755440210,,158.00,NJ,,0
+144,GIANTLEAP2944,laura.graf1@gmail.com,2021-01-11T09:31:59-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 13 / Womens 15'],,2936109367378,,148.00,NC,ENDLESSFLIGHTXWDL6ZTJ,10.00
+145,GIANTLEAP2945,tyler@jacksonllc.com,2021-01-11T12:56:01-08:00,USD,['Avro - Black Leather / US / Mens 12 / Womens 14'],,2936404770898,,178.00,FL,,0
+146,GIANTLEAP2946,reimer.brian@gmail.com,2021-01-11T14:26:13-08:00,USD,['Avro Knit - Black Knit / US / Mens 10.5 / Womens 12.5'],,2936541839442,,158.00,CO,,0
+147,GIANTLEAP2947,reimer.brian@gmail.com,2021-01-11T14:34:17-08:00,USD,['Avro Knit - Black Knit / US / Mens 10.5 / Womens 12.5'],,2936552882258,,0.00,CO,warranty,158.00
+148,GIANTLEAP2948,marcbnoland@gmail.com,2021-01-11T14:42:15-08:00,USD,"['SmartFit™', 'Avro Utility - Aluminum Utility / US / Mens 11.5 / Womens 13.5']",pre-order,2936563335250,,276.00,GA,,0
+149,GIANTLEAP2949,marvizu4981@yahoo.com,2021-01-11T16:30:14-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 8.5 / Womens 10.5'],,2936701812818,,148.00,CA,ENDLESSFLIGHTMW43KMWX,10.00
+150,GIANTLEAP2950,justin.marburger@yahoo.com,2021-01-11T17:48:47-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 9.5 / Womens 11.5'],pre-order,2936791367762,,198.00,TX,,0
+151,GIANTLEAP2951,cegree8@gmail.com,2021-01-11T20:01:36-08:00,USD,['Avro Knit - Black Knit / US / Mens 10 / Womens 12'],,2936948654162,,158.00,OH,,0
+152,GIANTLEAP2952,peterw4503@gmail.com,2021-01-11T23:00:25-08:00,USD,['Avro - Black Leather / US / Mens 10 / Womens 12'],,2937106137170,,178.00,WA,,0
+153,GIANTLEAP2953,devinlarsenlpm@gmail.com,2021-01-12T08:24:55-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 9 / Womens 11'],,2937708838994,,148.00,TX,ENDLESSFLIGHTWMDJF9TC,10.00
+154,GIANTLEAP2954,zlmessenger@gmail.com,2021-01-12T10:27:08-08:00,USD,"['Avro Knit - Ash White Knit / US / Mens 9 / Womens 11', 'Avro - Black Leather / US / Mens 9 / Womens 11']",,2937906102354,,336.00,NY,,0
+155,GIANTLEAP2955,anbowen@hotmail.com,2021-01-12T10:48:11-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10 / Womens 12'],,2937940508754,,158.00,TX,,0
+156,GIANTLEAP2956,jliptons@gmail.com,2021-01-12T11:49:49-08:00,USD,['Avro Knit - Black Knit / US / Mens 6.5 / Womens 8.5'],,2938041270354,,158.00,IL,,0
+157,GIANTLEAP2957,steveconnolly22@gmail.com,2021-01-12T11:56:16-08:00,USD,['Avro - Light Grey Leather / US / Mens 11.5 / Womens 13.5'],,2938051756114,,178.00,MA,,0
+158,GIANTLEAP2958,daniel_beltran5@yahoo.com,2021-01-12T17:04:32-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 10.5 / Womens 12.5'],,2938478428242,,128.00,TX,CASCAREFFERAL,30.00
+159,GIANTLEAP2959,janapleyto@gmail.com,2021-01-12T20:03:46-08:00,USD,['Avro - Sand Leather / US / Mens 3 / Womens 5'],,2938684866642,,168.00,NY,DOCBROWN,10.00
+160,GIANTLEAP2960,vtague@taguelumber.com,2021-01-13T11:24:15-08:00,USD,['Avro - Ceramic White Leather / US / Mens 9 / Womens 11'],,2939665285202,,178.00,FL,,0
+161,GIANTLEAP2961,,2021-01-13T14:05:24-08:00,USD,['Avro - Sand Leather / US / Mens 8 / Womens 10'],,2939915993170,,0.00,OH,Casca Creator,178.00
+162,GIANTLEAP2962,1colincasey@gmail.com,2021-01-13T16:38:28-08:00,USD,['Avro - Black Leather / US / Mens 10 / Womens 12'],,2940112633938,,178.00,MA,,0
+163,GIANTLEAP2963,schefz@gmail.com,2021-01-13T18:24:11-08:00,USD,['Avro - Light Grey Leather / US / Mens 10.5 / Womens 12.5'],,2940240035922,,178.00,FL,,0
+164,GIANTLEAP2964,jacobbastian@hotmail.com,2021-01-13T19:54:39-08:00,USD,['Avro - Black Leather / US / Mens 10 / Womens 12'],,2940333785170,,178.00,AZ,,0
+165,GIANTLEAP2965,mikebarile13@gmail.com,2021-01-14T06:45:20-08:00,USD,"['Avro Utility - Black Utility / US / Mens 11 / Womens 13', 'SmartFit™', 'Avro Utility - Black Utility / US / Mens 11.5 / Womens 13.5']",pre-order,2940877275218,,474.00,TX,,0
+166,GIANTLEAP2966,bradneville7@gmail.com,2021-01-14T13:02:55-08:00,USD,"['SmartFit™', 'Avro Utility - Black Utility / US / Mens 9 / Womens 11']",pre-order,2941520445522,,276.00,FL,,0
+167,GIANTLEAP2967,pp2140@hotmail.com,2021-01-14T13:57:41-08:00,USD,['Avro Knit - Black Knit / US / Mens 10.5 / Womens 12.5'],,2941614063698,,148.00,IL,ENDLESSFLIGHTLDW4L56H,10.00
+168,GIANTLEAP2968,bateman22@hotmail.com,2021-01-14T14:49:01-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 9.5 / Womens 11.5'],,2941694541906,,158.00,TN,,0
+169,GIANTLEAP2969,tonjones@gmail.com,2021-01-14T16:16:18-08:00,USD,['Avro Knit - Black Knit / US / Mens 9.5 / Womens 11.5'],,2941813620818,,158.00,SC,,0
+170,GIANTLEAP2970,michaelbrettmoore@gmail.com,2021-01-14T19:13:22-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 11.5 / Womens 13.5'],,2942099390546,,158.00,TX,,0
+171,GIANTLEAP2971,nirdesh73@gmail.com,2021-01-14T19:41:59-08:00,USD,['Avro - Black Leather / US / Mens 9 / Womens 11'],,2942132420690,,168.00,IL,ENDLESSFLIGHT993P2TXF,10.00
+172,GIANTLEAP2972,kliebengood@gmail.com,2021-01-14T20:24:37-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 11.5 / Womens 13.5'],,2942184161362,,158.00,CA,,0
+173,GIANTLEAP2973,hanansuk@gmail.com,2021-01-15T14:10:22-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 9 / Womens 11'],,2943501271122,,0.00,CA,exchange,158.00
+174,GIANTLEAP2974,zak@detroitbikes.com,2021-01-15T19:29:00-08:00,USD,['Avro - Black Leather / US / Mens 11 / Womens 13'],,2943919554642,,178.00,MI,,0
+175,GIANTLEAP2975,swhit0919@gmail.com,2021-01-16T05:30:30-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 10 / Womens 12'],pre-order,2944393642066,,198.00,PA,,0
+176,GIANTLEAP2976,hillsalomon@gmail.com,2021-01-16T07:01:15-08:00,USD,['Kepler - Black/Yellow / S-M'],,2944492208210,,35.00,CA,,0
+177,GIANTLEAP2977,harperkimmie@gmail.com,2021-01-16T07:16:18-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 10 / Womens 12'],,2944509673554,,158.00,GA,,0
+178,GIANTLEAP2978,todd.a.mcpherson@gmail.com,2021-01-16T07:26:05-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 9 / Womens 11'],,2944525828178,,158.00,LA,,0
+179,GIANTLEAP2979,jgross@ojg.com,2021-01-16T09:30:35-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 13 / Womens 15'],pre-order,2944704970834,,198.00,NY,,0
+180,GIANTLEAP2980,ccintron473@gmail.com,2021-01-16T16:12:42-08:00,USD,['Avro - Black Leather / US / Mens 11.5 / Womens 13.5'],,2945286864978,,178.00,GA,,0
+181,GIANTLEAP2981,szyman42@yahoo.com,2021-01-16T17:22:29-08:00,USD,['Avro Knit - Black Knit / US / Mens 13 / Womens 15'],,2945366065234,,158.00,IN,,0
+182,GIANTLEAP2982,jamesmekeel@gmail.com,2021-01-17T10:25:34-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10 / Womens 12'],,2946316238930,,158.00,WA,,0
+183,GIANTLEAP2983,rcp06c@gmail.com,2021-01-17T12:02:58-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 11 / Womens 13'],pre-order,2946451570770,,198.00,GA,,0
+184,GIANTLEAP2984,curtis_devine@yahoo.com,2021-01-17T13:06:27-08:00,USD,"['Avro - Black Leather / US / Mens 10.5 / Womens 12.5', 'Avro Utility - Aluminum Utility / US / Mens 10.5 / Womens 12.5']",pre-order,2946545385554,,376.00,AZ,,0
+185,GIANTLEAP2985,bsmith9155@gmail.com,2021-01-17T14:17:44-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 12 / Womens 14'],,2946649882706,,148.00,TX,ENDLESSFLIGHT4TP75T7C,10.00
+186,GIANTLEAP2986,adam@fortyfour.com,2021-01-17T17:25:18-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 9 / Womens 11'],pre-order,2946884829266,,198.00,GA,,0
+187,GIANTLEAP2987,gducroux@avantgarde-ws.com,2021-01-18T05:42:01-08:00,USD,['Avro - Space Black Leather Black Sole / US / Mens 9.5 / Womens 11.5'],,2947495624786,,178.00,NY,,0
+188,GIANTLEAP2988,johnsonbrian@hotmail.com,2021-01-18T07:07:11-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 9.5 / Womens 11.5'],,2947578724434,,158.00,DE,,0
+189,GIANTLEAP2989,pete.stovall@compass.com,2021-01-18T08:22:16-08:00,USD,['Avro - Light Grey Leather / US / Mens 11 / Womens 13'],,2947672408146,,178.00,TX,,0
+190,GIANTLEAP2990,crossdj@hotmail.com,2021-01-18T08:22:28-08:00,USD,['Avro - Black Leather / US / Mens 7.5 / Womens 9.5'],,2947672637522,,178.00,DE,,0
+191,GIANTLEAP2991,vsohagi@hotmail.com,2021-01-18T09:43:58-08:00,USD,['Avro - Black Leather / US / Mens 10.5 / Womens 12.5'],,2947782508626,,0.00,CA,exchange,178.00
+192,GIANTLEAP2992,szyman42@yahoo.com,2021-01-18T12:29:24-08:00,USD,['Avro Knit - Black Knit / US / Mens 12 / Womens 14'],,2948027547730,,158.00,IN,,0
+193,GIANTLEAP2993,cammcdaniel@gmail.com,2021-01-18T20:34:27-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10.5 / Womens 12.5'],,2948621533266,,158.00,TX,,0
+194,GIANTLEAP2994,maciej.migalski@pressglass.com,2021-01-19T07:03:24-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 11 / Womens 13'],,2949129273426,,158.00,NC,,0
+195,GIANTLEAP2995,jlobato@kennedyfloorsnj.com,2021-01-19T13:25:04-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10.5 / Womens 12.5'],,2951277969490,,158.00,NJ,,0
+196,GIANTLEAP2996,arsalzberg@yahoo.com,2021-01-19T19:25:00-08:00,USD,"['Avro Knit - Light Grey Knit / US / Mens 9.5 / Womens 11.5', 'Avro Knit - Ash White Knit / US / Mens 5.5 / Womens 7.5']",,2951964459090,,316.00,FL,,0
+197,GIANTLEAP2997,tmcgoorty@citroncommodities.com,2021-01-19T20:28:01-08:00,USD,"['Avro Knit - Light Grey Knit / US / Mens 10.5 / Womens 12.5', 'Avro Knit - Ash White Knit / US / Mens 10.5 / Womens 12.5']",,2952024948818,,362.02,NY,,0
+198,GIANTLEAP2998,matt.yerbic@me.com,2021-01-19T23:25:28-08:00,USD,"['Avro Utility - Aluminum Utility / US / Mens 10.5 / Womens 12.5', 'SmartFit™']",pre-order,2952170897490,,276.00,WA,,0
+199,GIANTLEAP2999,MattGilman004@yahoo.com,2021-01-20T05:46:05-08:00,USD,"['SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 11.5 / Womens 13.5']",,2952468332626,,236.00,FL,,0
+200,GIANTLEAP3000,sam.suzor@hotmail.com,2021-01-20T06:40:01-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 12 / Womens 14'],pre-order,2952528953426,,198.00,WY,,0
+201,GIANTLEAP3001,malorie.folino@gmail.com,2021-01-20T12:01:56-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 6.5 / Womens 8.5'],,2952980955218,,158.00,CA,,0
+202,GIANTLEAP3002,kauffam2751@gmail.com,2021-01-20T12:43:18-08:00,USD,['Avro - Black Leather / US / Mens 5.5 / Womens 7.5'],,2953045868626,,143.56,CA,bdp40,71.20
+203,GIANTLEAP3003,clif.watkins@yahoo.com,2021-01-20T13:04:38-08:00,USD,"['SmartFit™', 'Avro - Light Grey Leather / US / Mens 12 / Womens 14']",,2953072148562,,256.00,WA,,0
+204,GIANTLEAP3004,jliptons@gmail.com,2021-01-20T14:44:23-08:00,USD,['Avro Knit - Black Knit / US / Mens 7 / Womens 9'],,2953212067922,,0.00,IL,exchange,158.00
+205,GIANTLEAP3005,markroby@gmail.com,2021-01-20T15:02:47-08:00,USD,['Avro Knit - Space Black Knit Black Sole / US / Mens 9.5 / Womens 11.5'],,2953234284626,,148.00,NM,ENDLESSFLIGHTR9JHGZ9L,10.00
+206,GIANTLEAP3006,christophtrumbull@yahoo.com,2021-01-20T16:32:57-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10 / Womens 12'],,2953345106002,,148.00,UT,ENDLESSFLIGHTCLC8WC7T,10.00
+207,GIANTLEAP3007,cgray311@yahoo.com,2021-01-20T17:13:50-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 10.5 / Womens 12.5'],,2953395535954,,158.00,MA,,0
+208,GIANTLEAP3008,gdiharce@matmarket.com,2021-01-20T19:26:38-08:00,USD,['SmartFit™'],,2953542664274,,78.00,MA,,0
+209,GIANTLEAP3009,paul.izzo@gmail.com,2021-01-20T19:33:39-08:00,USD,"['SmartFit™', 'Avro Utility - Aluminum Utility / US / Mens 11.5 / Womens 13.5']",pre-order,2953548955730,,276.00,NY,,0
+210,GIANTLEAP3010,chris_tran@nmmachining.com,2021-01-20T20:22:13-08:00,USD,"['SmartFit™', 'Avro Utility - Black Utility / US / Mens 12 / Womens 14']",pre-order,2953595224146,,276.00,CA,,0
+211,GIANTLEAP3011,tuckerflake@yahoo.com,2021-01-21T06:05:04-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 10 / Womens 12'],,2954055680082,,158.00,NY,,0
+212,GIANTLEAP3012,spencer.raymond@gmail.com,2021-01-21T06:48:51-08:00,USD,"['SmartFit™', 'Avro Knit - Ash White Knit / US / Mens 13 / Womens 15']",,2954109059154,,236.00,RI,,0
+213,GIANTLEAP3013,r3p3@yahoo.com,2021-01-21T10:14:18-08:00,USD,"['Avro - Ceramic White Leather / US / Mens 11.5 / Womens 13.5', 'Avro Knit - Ash White Knit / US / Mens 11.5 / Womens 13.5']",,2954556932178,,336.00,FL,,0
+214,GIANTLEAP3014,greg.a.williams@comcast.net,2021-01-21T11:33:49-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 10.5 / Womens 12.5'],,2954886283346,,158.00,OR,,0
+215,GIANTLEAP3015,sisterkate1234@yahoo.com,2021-01-21T17:47:49-08:00,USD,['Avro - Titanium Leather / US / Mens 9 / Womens 11'],,2955635523666,,158.00,OH,FR-EKRaSCSxjXsr1rsi,20.00
+216,GIANTLEAP3016,jared.verwiel@gmail.com,2021-01-21T21:57:43-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 10 / Womens 12'],,2956016517202,,158.00,OK,,0
+217,GIANTLEAP3017,felicidp82@gmail.com,2021-01-22T04:36:19-08:00,USD,"['SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 10 / Womens 12']",,2956386992210,,236.00,OH,,0
+218,GIANTLEAP3018,jackbrewer13@gmail.com,2021-01-22T08:08:03-08:00,USD,"['Avro Knit - Light Grey Knit / US / Mens 11.5 / Womens 13.5', 'Avro Knit - Ash White Knit / US / Mens 11.5 / Womens 13.5']",,2956685508690,,316.00,FL,,0
+219,GIANTLEAP3019,doug@thereedhome.com,2021-01-22T08:32:46-08:00,USD,"['SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 12 / Womens 14']",,2956730597458,,236.00,AZ,,0
+220,GIANTLEAP3020,dc@abraven.com,2021-01-22T13:33:13-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 10.5 / Womens 12.5'],,2957305380946,,158.00,NY,,0
+221,GIANTLEAP3021,paul.moore3@yahoo.com,2021-01-22T19:26:09-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 12 / Womens 14'],,2957815873618,,158.00,CO,,0
+222,GIANTLEAP3022,afraser10@yahoo.com,2021-01-22T20:21:38-08:00,USD,"['Avro - Black Leather / US / Mens 5.5 / Womens 7.5', 'Avro - Light Grey Leather / US / Mens 6 / Womens 8']",,2957882523730,,356.00,WA,,0
+223,GIANTLEAP3023,hagsfarm@gmail.com,2021-01-23T08:16:25-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 9 / Womens 11'],,2958591754322,,158.00,NY,,0
+224,GIANTLEAP3024,cfcully4@gmail.com,2021-01-23T09:08:02-08:00,USD,['Avro Knit - Space Black Knit / US / Mens 11 / Womens 13'],,2958677475410,,158.00,GA,,0
+225,GIANTLEAP3025,ozgurince@gmail.com,2021-01-23T11:48:41-08:00,USD,"['SmartFit™', 'Avro Knit - Black Knit / US / Mens 10 / Womens 12']",,2958947975250,,236.00,SC,,0
+226,GIANTLEAP3026,scotthahn9@gmail.com,2021-01-23T12:01:59-08:00,USD,['Avro - Black Leather / US / Mens 10.5 / Womens 12.5'],,2958970388562,,178.00,CA,,0
+227,GIANTLEAP3027,mybigsisterscloset@gmail.com,2021-01-23T19:50:03-08:00,USD,['Avro Knit - Charcoal Knit / US / Mens 13 / Womens 15'],pre-order,2959621718098,,158.00,NJ,,0
+228,GIANTLEAP3028,clay.curlee@gmail.com,2021-01-23T20:00:09-08:00,USD,['Avro - Ceramic White Leather / US / Mens 10.5 / Womens 12.5'],,2959632728146,,178.00,TX,,0
+229,GIANTLEAP3029,mjmantey@gmail.com,2021-01-24T06:00:31-08:00,USD,"['SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 11 / Womens 13']",,2960124248146,,236.00,VA,,0
+230,GIANTLEAP3030,drew.c.bell@gmail.com,2021-01-24T09:59:50-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 10 / Womens 12'],pre-order,2960445440082,,198.00,TX,,0
+231,GIANTLEAP3031,ajhill84@gmail.com,2021-01-24T10:01:57-08:00,USD,['Avro - Black Leather / US / Mens 8.5 / Womens 10.5'],,2960448749650,,178.00,MA,,0
+232,GIANTLEAP3032,bobkozyra@gmail.com,2021-01-24T12:55:08-08:00,USD,"['Avro Utility - Black Utility / US / Mens 8 / Womens 10', 'Avro Utility - Aluminum Utility / US / Mens 10 / Womens 12']",pre-order,2960727933010,,396.00,CA,,0
+233,GIANTLEAP3033,chris115@att.net,2021-01-24T13:13:18-08:00,USD,"['SmartFit™', 'Avro Utility - Aluminum Utility / US / Mens 10.5 / Womens 12.5']",pre-order,2960754114642,,276.00,TX,,0
+234,GIANTLEAP3034,sachin.kamdar@gmail.com,2021-01-24T15:59:06-08:00,USD,"['Avro Utility - Aluminum Utility / US / Mens 11 / Womens 13', 'SmartFit™']",pre-order,2960987488338,,266.00,NY,DOCBROWN,10.00
+235,GIANTLEAP3035,andrewh777@hotmail.com,2021-01-24T16:39:00-08:00,USD,"['SmartFit™', 'Avro Knit - Light Grey Knit / US / Mens 9 / Womens 11']",,2961047421010,,236.00,CA,,0
+236,GIANTLEAP3036,ben@aetnarealty.com,2021-01-24T17:35:03-08:00,USD,"['SmartFit™', 'Avro Utility - Black Utility / US / Mens 10.5 / Womens 12.5']",pre-order,2961123344466,,276.00,NY,,0
+237,GIANTLEAP3037,bobarke@gmail.com,2021-01-24T21:39:01-08:00,USD,['Avro Knit - Black Knit / US / Mens 12 / Womens 14'],,2961417011282,,158.00,CA,,0
+238,GIANTLEAP3038,kuhnlein.chris@gmail.com,2021-01-24T22:52:47-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 9.5 / Womens 11.5'],pre-order,2961476714578,,188.00,NJ,ENDLESSFLIGHT2KCM9GWB,10.00
+239,GIANTLEAP3039,daven@centralsolutions.com,2021-01-25T05:31:23-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 11.5 / Womens 13.5'],pre-order,2961801347154,,198.00,MO,,0
+240,GIANTLEAP3040,blongstocks@gmail.com,2021-01-25T07:20:37-08:00,USD,"['Avro - Black Leather / US / Mens 11 / Womens 13', 'Avro Knit - Light Grey Knit / US / Mens 11 / Womens 13']",,2961928093778,,336.00,VA,,0
+241,GIANTLEAP3041,pfalmer.michael@gmail.com,2021-01-25T12:27:53-08:00,USD,['SmartFit™'],,2962393137234,,0.00,CO,Custom discount,78.00
+242,GIANTLEAP3042,SFBOURLAND@GMAIL.COM,2021-01-25T13:25:21-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 10 / Womens 12'],pre-order,2962478530642,,198.00,LA,,0
+243,GIANTLEAP3043,d.musto10@gmail.com,2021-01-25T16:06:40-08:00,USD,['Avro Knit - Black Knit / US / Mens 10.5 / Womens 12.5'],,2962704531538,,0.00,NY,warranty claim,158.00
+244,GIANTLEAP3044,bjackson3@gmail.com,2021-01-25T18:01:45-08:00,USD,"['SmartFit™', 'Avro - Space Black Leather Black Sole / US / Mens 10.5 / Womens 12.5']",,2962851135570,,256.00,PA,,0
+245,GIANTLEAP3045,clivehelfet@gmail.com,2021-01-25T22:22:01-08:00,USD,['Avro - Black Leather / US / Mens 12 / Womens 14'],,2963138117714,,178.00,NY,,0
+246,GIANTLEAP3046,leiner.matt@gmail.com,2021-01-25T23:05:37-08:00,USD,['Avro - Space Black Leather Black Sole / US / Mens 10 / Womens 12'],,2963169149010,,168.00,VA,ENDLESSFLIGHTRZNT3GTC,10.00
+247,GIANTLEAP3047,MattGilman004@yahoo.com,2021-01-26T15:49:23-08:00,USD,['Avro Knit - Space Black Knit / US / Mens 11.5 / Womens 13.5'],,2964401356882,,158.00,FL,,0
+248,GIANTLEAP3048,ab7359@gmail.com,2021-01-26T15:56:28-08:00,USD,['Avro - Ceramic White Leather / US / Mens 11 / Womens 13'],,2964409745490,,178.00,FL,,0
+249,GIANTLEAP3049,pete.stovall@compass.com,2021-01-26T16:23:48-08:00,USD,['Avro - Light Grey Leather / US / Mens 11.5 / Womens 13.5'],,2964450017362,,178.00,TX,,0
+250,GIANTLEAP3050,joshcostella@gmail.com,2021-01-26T16:43:27-08:00,USD,['Avro Knit - Black Knit / US / Mens 11.5 / Womens 13.5'],,2964474462290,,158.00,AZ,,0
+251,GIANTLEAP3051,jonghur73@gmail.com,2021-01-26T19:08:35-08:00,USD,['Avro - Black Leather / US / Mens 10 / Womens 12'],,2964647215186,,178.00,MA,,0
+252,GIANTLEAP3052,busque88@gmail.com,2021-01-26T21:29:10-08:00,USD,['Avro Knit - Black Knit / US / Mens 6.5 / Womens 8.5'],,2964798931026,,158.00,CA,,0
+253,GIANTLEAP3053,tony.garnicki@gmail.com,2021-01-26T23:38:43-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 9.5 / Womens 11.5'],pre-order,2964895629394,,198.00,CA,,0
+254,GIANTLEAP3054,tony.garnicki@gmail.com,2021-01-26T23:40:11-08:00,USD,['Avro Utility - Aluminum Utility / US / Mens 9.5 / Womens 11.5'],pre-order,2964896317522,,198.00,CA,,0
+255,GIANTLEAP3055,georgeluo93@gmail.com,2021-01-27T10:17:46-08:00,USD,"['SmartFit™', 'Avro Utility - Aluminum Utility / US / Mens 9.5 / Womens 11.5']",pre-order,2965559803986,,276.00,NY,,0
+256,GIANTLEAP3056,bshipley27@gmail.com,2021-01-27T12:56:50-08:00,USD,['Avro - Titanium Leather / US / Mens 7 / Womens 9'],,2965792391250,,178.00,GA,,0
+257,GIANTLEAP3057,cotlerich@yahoo.com,2021-01-27T13:54:27-08:00,USD,['Avro Knit - Black Knit / US / Mens 12.5 / Womens 14.5'],,2965874966610,,158.00,NY,,0
+258,GIANTLEAP3058,craigt383@gmail.com,2021-01-27T14:02:45-08:00,USD,"['Avro Knit - Light Grey Knit / US / Mens 10 / Womens 12', 'Avro Knit - Wine Knit / US / Mens 10 / Womens 12']",,2965886369874,,276.00,AZ,WELCOMETOCASCA,20.00
+259,GIANTLEAP3059,devinlarsenlpm@gmail.com,2021-01-27T19:55:55-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 8.5 / Womens 10.5'],,2966300033106,,0.00,TX,exchange ,158.00
+260,GIANTLEAP3060,solarezjon@yahoo.com,2021-01-27T21:30:01-08:00,USD,['Avro - Black Leather / US / Mens 10 / Womens 12'],,2966395224146,,178.00,CA,,0
+261,GIANTLEAP3061,jumarapol@yahoo.com,2021-01-27T22:01:02-08:00,USD,['Avro - Black Leather / US / Mens 8.5 / Womens 10.5'],,2966416228434,,178.00,TX,,0
+262,GIANTLEAP3062,peter.steger2@gmail.com,2021-01-28T08:04:29-08:00,USD,['Avro Knit - Black Knit / US / Mens 10 / Womens 12'],,2966968827986,,158.00,GA,,0
+263,GIANTLEAP3063,steve_cadigan@yahoo.com,2021-01-28T11:00:44-08:00,USD,"['SmartFit™', 'Avro - Black Leather / US / Mens 10 / Womens 12']",,2969298206802,,256.00,CA,,0
+264,GIANTLEAP3064,devinlarsenlpm@gmail.com,2021-01-28T11:11:33-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 9 / Womens 11'],,2969347391570,,138.00,TX,WELCOMETOCASCA,20.00
+265,GIANTLEAP3065,phil.harrison@perkinswill.com,2021-01-28T11:26:29-08:00,USD,"['SmartFit™', 'Avro Knit - Black Knit / US / Mens 9.5 / Womens 11.5']",,2969410994258,,236.00,GA,,0
+266,GIANTLEAP3066,,2021-01-28T11:40:33-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 12 / Womens 14'],,2969458704466,,0.00,CA,Braden ,158.00
+267,GIANTLEAP3067,jdfranklin05@gmail.com,2021-01-28T16:33:52-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 11.5 / Womens 13.5'],,2970056884306,,158.00,TN,,0
+268,GIANTLEAP3068,bakersfieldalex@yahoo.com,2021-01-28T21:00:56-08:00,USD,['Avro Knit - Black Knit / US / Mens 10.5 / Womens 12.5'],,2970424442962,,158.00,CA,,0
+269,GIANTLEAP3069,timothyrburns14@gmail.com,2021-01-29T09:28:02-08:00,USD,['Avro Knit - Black Knit / US / Mens 10.5 / Womens 12.5'],,2971280965714,,158.00,PA,,0
+270,GIANTLEAP3070,weswooden@gmail.com,2021-01-29T18:22:35-08:00,USD,['Avro Knit - Charcoal Knit / US / Mens 10.5 / Womens 12.5'],pre-order,2972527329362,,158.00,UT,,0
+271,GIANTLEAP3071,odlanyer37@gmail.com,2021-01-30T02:17:58-08:00,USD,"['SmartFit™', 'Avro Utility - Aluminum Utility / US / Mens 11.5 / Womens 13.5']",pre-order,2973072621650,,276.00,NY,,0
+272,GIANTLEAP3072,samfcar@gmail.com,2021-01-30T11:20:22-08:00,USD,['Avro - Light Grey Leather / US / Mens 9 / Womens 11'],,2973795909714,,168.00,NM,DOCBROWN,10.00
+273,GIANTLEAP3073,irshaad17@gmail.com,2021-01-30T12:48:38-08:00,USD,"['SmartFit™', 'Avro Knit - Black Knit / US / Mens 10 / Womens 12']",,2973944905810,,236.00,IL,,0
+274,GIANTLEAP3074,kouri.shane@gmail.com,2021-01-30T13:34:39-08:00,USD,['Avro Knit - Light Grey Knit / US / Mens 11 / Womens 13'],,2974019649618,,148.00,IL,ENDLESSFLIGHTW2BQX4KM,10.00
+275,GIANTLEAP3075,chuckeaster25@gmail.com,2021-01-31T09:41:33-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 11 / Womens 13'],,2975311626322,,158.00,MD,,0
+276,GIANTLEAP3076,mmalone@lecc.com,2021-01-31T13:04:03-08:00,USD,"['SmartFit™', 'Avro Knit - Black Knit / US / Mens 10 / Womens 12']",,2975635210322,,236.00,CA,,0
+277,GIANTLEAP3077,cable.ryan@gmail.com,2021-01-31T17:21:56-08:00,USD,['Avro - White/Gum Leather / US / Mens 10.5 / Womens 12.5'],pre-order,2975997034578,,178.00,KS,,0
+278,GIANTLEAP3078,czs0009@auburn.edu,2021-01-31T19:30:35-08:00,USD,['Avro Knit - Ash White Knit / US / Mens 13 / Womens 15'],,2976160546898,,148.00,GA,ENDLESSFLIGHTVCR786VN,10.00
+279,GIANTLEAP3079,clumma@gmail.com,2021-01-31T20:28:23-08:00,USD,"['SmartFit™', 'Avro Knit - Space Black Knit / US / Mens 9 / Womens 11']",,2976226181202,,236.00,CA,,0
+280,GIANTLEAP3080,sergiolopeznst@gmail.com,2021-01-31T21:06:05-08:00,USD,['Avro Knit - Black Knit / US / Mens 11 / Womens 13'],,2976262160466,,194.20,UT,,0
+281,GIANTLEAP3081,logan@logankibens.com,2021-01-31T21:18:05-08:00,USD,['Avro Knit - Space Black Knit / US / Mens 9 / Womens 11'],,2976281722962,,194.78,CA,,0

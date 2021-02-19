@@ -272,6 +272,12 @@ def get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,
 	df_CA = pd.DataFrame()
 	df_US = pd.DataFrame()
 
+	start_date = (parser.parse(start_date)).isoformat()+"-08:00"
+	end_date = (parser.parse(end_date)+timedelta(hours=23)+timedelta(minutes=59)+timedelta(seconds=59)).isoformat()+"-08:00"
+
+	print(end_date)
+
+
 	if CA == True:
 
 		request1 = "https://"+CA_key+":"+CA_pass+"@casca-designs-inc-canada.myshopify.com/admin/api/2021-01/orders.json?limit=1&status=any&fulfillment_status=any&created_at_min="+week_before+"&created_at_max="+day_before+"&fields=name,created_at,id"
