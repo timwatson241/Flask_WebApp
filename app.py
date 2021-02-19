@@ -194,7 +194,6 @@ app.layout = html.Div(
     Input("date_range", "start_date"),
     Input("date_range", "end_date"))
 def update_df(start_date,end_date):
-    print(end_date)
     df = get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass)
     df_json = df.to_json(orient="split")
     df.to_csv('output.csv')

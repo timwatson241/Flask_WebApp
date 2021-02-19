@@ -266,17 +266,14 @@ def build_piechart(labels,values,text,colors,bgcolor,txcolor):
 
 def get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,US=True):
 
-	day_before = (parser.parse(start_date)-timedelta(days=1)).isoformat()
-	week_before = (parser.parse(start_date)-timedelta(weeks=1)).isoformat()
+	day_before = (parser.parse(start_date)-timedelta(days=1)).isoformat()+"-08:00"
+	week_before = (parser.parse(start_date)-timedelta(weeks=1)).isoformat()+"-08:00"
 
 	df_CA = pd.DataFrame()
 	df_US = pd.DataFrame()
 
 	start_date = (parser.parse(start_date)).isoformat()+"-08:00"
 	end_date = (parser.parse(end_date)+timedelta(hours=23)+timedelta(minutes=59)+timedelta(seconds=59)).isoformat()+"-08:00"
-
-	print(end_date)
-
 
 	if CA == True:
 
@@ -301,8 +298,8 @@ def get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,
 					'currency':[response.json()['orders'][i]['currency']],
 					'product':[[]],
 					'tags':[response.json()['orders'][i]['tags']],
-					'id':[response.json()['orders'][i]['id']],
-					'location_id':[response.json()['orders'][i]['location_id']],
+					'id':[str(response.json()['orders'][i]['id'])],
+					'location_id':[str(response.json()['orders'][i]['location_id'])],
 					'total_price':[response.json()['orders'][i]['total_price']]
 					#'fulfillment_status':[response.json()['orders'][i]['fulfillment_status']]
 				}
@@ -324,6 +321,7 @@ def get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,
 				df_CA = pd.concat([df_CA,df2])
 
 			id_before = df_CA['id'].max()
+			print(id_before)
 
 			request = "https://"+CA_key+":"+CA_pass+"@casca-designs-inc-canada.myshopify.com/admin/api/2021-01/orders.json?limit=50&status=any&since_id="+str(id_before)+"&fulfillment_status=any&created_at_min="+start_date+"&created_at_max="+end_date+"&fields=name,created_at,id,location_id,currency,email,fulfillment_status,tags,line_items,discount_applications,shipping_address,total-price,discount_codes"
 			response = requests.get(request)
@@ -352,8 +350,8 @@ def get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,
 					'currency':[response.json()['orders'][i]['currency']],
 					'product':[[]],
 					'tags':[response.json()['orders'][i]['tags']],
-					'id':[response.json()['orders'][i]['id']],
-					'location_id':[response.json()['orders'][i]['location_id']],
+					'id':[str(response.json()['orders'][i]['id'])],
+					'location_id':[str(response.json()['orders'][i]['location_id'])],
 					'total_price':[response.json()['orders'][i]['total_price']]
 					#'fulfillment_status':[response.json()['orders'][i]['fulfillment_status']]
 				}
@@ -375,6 +373,7 @@ def get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,
 				df_US = pd.concat([df_US,df2])
 
 			id_before = df_US['id'].max()
+			print(id_before)
 
 			request = "https://"+US_key+":"+US_pass+"@casca-designs-inc.myshopify.com/admin/api/2021-01/orders.json?limit=50&status=any&since_id="+str(id_before)+"&fulfillment_status=any&created_at_min="+start_date+"&created_at_max="+end_date+"&fields=name,created_at,id,location_id,currency,email,fulfillment_status,tags,line_items,discount_applications,shipping_address,total-price,discount_codes"
 			response = requests.get(request)
