@@ -82,6 +82,7 @@ app.layout = html.Div(
         
         
         html.Div(id='intermediate-value', style={'display': 'none'}),
+        html.H3(id='date-confirm', style={"textAlign": "center",'color':txcolor}),
         
         html.Div([
             html.Div([
@@ -206,13 +207,14 @@ app.layout = html.Div(
 @app.callback(
     Output('intermediate-value', 'children'),
     Output('date_range','max_date_allowed'),
+    Output('date-confirm','children'),
     Input("date_range", "start_date"),
     Input("date_range", "end_date"))
 def update_df(start_date,end_date):
     df = get_dataframe(start_date,end_date,'shopifydata',engine)
     print(df.head())
     df_json = df.to_json(orient="split")
-    return df_json, date.today()+timedelta(days=1)
+    return df_json, date.today()+timedelta(days=1), 'Showing data from XXXX to XXXX'
 
 @app.callback(
     Output("bar-chart", "figure"),
