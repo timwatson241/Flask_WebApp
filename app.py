@@ -12,6 +12,7 @@ import requests
 import json
 import os
 from helpers import get_dataframe, build_piechart, process_df
+from sqlalchemy import create_engine
 
 # Shopify API credentials
 CA_key = os.getenv('CA_key')
@@ -47,6 +48,12 @@ discount_codes_of_interest = ['exchange','braden','warranty','cascacreator','err
 
 global colors
 colors = ['#F8BF14','#ebebeb', '#a99e8d','#ffffff','#2a2b2c','#94a9af','#4e75d4','#ffbb00']
+
+DB_pass = os.getenv('DB_pass') #153c017c2d44caa6396d985f693586a4b89241fee050e6e06f5cd3f040234a68
+
+URI = 'postgres+psycopg2://ipqektkjozaykv:'+DB_pass+'@ec2-52-7-168-69.compute-1.amazonaws.com:5432/d8d1nqq3e1dfge'
+engine = create_engine(URI, echo = True)
+
 
 app.layout = html.Div(
     [
@@ -194,9 +201,9 @@ app.layout = html.Div(
     Input("date_range", "start_date"),
     Input("date_range", "end_date"))
 def update_df(start_date,end_date):
-    df = get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass)
+    df = get_dataframe(start_date,end_date,'shopifydata',engine)
+    print(df.head())
     df_json = df.to_json(orient="split")
-    df.to_csv('output.csv')
     return df_json
 
 @app.callback(

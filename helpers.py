@@ -6,7 +6,19 @@ from datetime import datetime, timedelta
 import os
 import plotly.graph_objs as go
 
-def process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_interest,CA=True, US=True):
+def get_dataframe(start_date,end_date,table_name,engine):
+
+	entire_df = pd.read_sql_table(table_name,con=engine)
+
+	start_date = (parser.parse(start_date)).isoformat()+"-08:00"
+	end_date = (parser.parse(end_date)+timedelta(hours=23)+timedelta(minutes=59)+timedelta(seconds=59)).isoformat()+"-08:00"
+
+	reduced_df=entire_df[entire_df['created_at']<=end_date]
+	reduced_df=reduced_df[reduced_df['created_at']>=start_date]
+
+	return reduced_df
+
+def process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_interest,CA=True,US=True):
     
     if CA == False:
         df = df[df['currency']!='CAD']
@@ -264,8 +276,9 @@ def build_piechart(labels,values,text,colors,bgcolor,txcolor):
 
     return pie
 
-def get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,US=True):
+def get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,US=True):
 
+	print(start_date,'start_date')
 	day_before = (parser.parse(start_date)-timedelta(days=1)).isoformat()+"-08:00"
 	week_before = (parser.parse(start_date)-timedelta(weeks=1)).isoformat()+"-08:00"
 
@@ -385,3 +398,4 @@ def get_dataframe(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,
 	df=df.reset_index(drop=True)
 	
 	return df
+
