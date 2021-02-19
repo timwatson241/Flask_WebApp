@@ -52,7 +52,7 @@ colors = ['#F8BF14','#ebebeb', '#a99e8d','#ffffff','#2a2b2c','#94a9af','#4e75d4'
 DB_pass = os.getenv('DB_pass') #153c017c2d44caa6396d985f693586a4b89241fee050e6e06f5cd3f040234a68
 
 URI = 'postgres+psycopg2://ipqektkjozaykv:'+DB_pass+'@ec2-52-7-168-69.compute-1.amazonaws.com:5432/d8d1nqq3e1dfge'
-engine = create_engine(URI, echo = True)
+engine = create_engine(URI)
 
 
 app.layout = html.Div(
@@ -292,6 +292,8 @@ def update_prov_table(country_3,start_date,end_date,df_json):
 def update_graph(country_1,start_date,end_date,dropdown_value_1,df_json):
 
     df = pd.read_json(df_json, orient='split')
+
+    print('TYPE',df['product'].dtypes)
 
     if 'CA' in country_1:
         CA=True

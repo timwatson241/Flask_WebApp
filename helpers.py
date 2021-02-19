@@ -42,12 +42,22 @@ def process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_in
     qty_giveaways=len(df_temp[df_temp["total_price"]==0.00])
     df_temp=df_temp[df_temp["total_price"]!=0.00]
 
+    
+    df_temp['product']=df_temp['product'].apply(lambda x: x.replace('"',''))
+    df_temp['product']=df_temp['product'].apply(lambda x: x.replace('}',''))
+    df_temp['product']=df_temp['product'].apply(lambda x: x.replace('{',''))
+    df_temp['product']=df_temp['product'].apply(lambda x: x.split(','))
+  
+
     #How many orders have a SmartFit?
     Smartfit_order_count = 0
     for index, row in df_temp.iterrows():
         product_list = row['product']
+        print(product_list)
         if any('SmartFit' in product for product in product_list):
+        	#print('product',product)
             Smartfit_order_count+=1
+
 
      # How many in each country?
     Country_CA = len(df_temp[df_temp['currency']=='CAD'])
@@ -334,7 +344,6 @@ def get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_p
 				df_CA = pd.concat([df_CA,df2])
 
 			id_before = df_CA['id'].max()
-			print(id_before)
 
 			request = "https://"+CA_key+":"+CA_pass+"@casca-designs-inc-canada.myshopify.com/admin/api/2021-01/orders.json?limit=50&status=any&since_id="+str(id_before)+"&fulfillment_status=any&created_at_min="+start_date+"&created_at_max="+end_date+"&fields=name,created_at,id,location_id,currency,email,fulfillment_status,tags,line_items,discount_applications,shipping_address,total-price,discount_codes"
 			response = requests.get(request)
@@ -386,7 +395,6 @@ def get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_p
 				df_US = pd.concat([df_US,df2])
 
 			id_before = df_US['id'].max()
-			print(id_before)
 
 			request = "https://"+US_key+":"+US_pass+"@casca-designs-inc.myshopify.com/admin/api/2021-01/orders.json?limit=50&status=any&since_id="+str(id_before)+"&fulfillment_status=any&created_at_min="+start_date+"&created_at_max="+end_date+"&fields=name,created_at,id,location_id,currency,email,fulfillment_status,tags,line_items,discount_applications,shipping_address,total-price,discount_codes"
 			response = requests.get(request)
