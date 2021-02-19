@@ -64,10 +64,9 @@ app.layout = html.Div(
                         reopen_calendar_on_clear=True,
                         clearable = True,
                         min_date_allowed = date(2018, 6, 1),
-                        max_date_allowed = date.today(),
-                        # initial_visible_month = date(2020, 7, 1),
+                        max_date_allowed = date.today()+timedelta(days=1),
                         start_date = date(2021, 1, 1),
-                        end_date = date(2021, 1, 31),
+                        end_date = date.today(),
                         minimum_nights = 0,
                         updatemode = 'singledate',
                         className = 'dcc_compon',
@@ -198,13 +197,14 @@ app.layout = html.Div(
 
 @app.callback(
     Output('intermediate-value', 'children'),
+    Output('date_range','max_date_allowed'),
     Input("date_range", "start_date"),
     Input("date_range", "end_date"))
 def update_df(start_date,end_date):
     df = get_dataframe(start_date,end_date,'shopifydata',engine)
     print(df.head())
     df_json = df.to_json(orient="split")
-    return df_json
+    return df_json, date.today()+timedelta(days=1)
 
 @app.callback(
     Output("bar-chart", "figure"),
