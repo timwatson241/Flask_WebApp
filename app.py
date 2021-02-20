@@ -74,7 +74,7 @@ app.layout = html.Div(
                         min_date_allowed = date(2018, 6, 1),
                         max_date_allowed = date.today(),
                         start_date = date(2021, 1, 1),
-                        end_date = date.today(),
+                        end_date = date.today()-timedelta(days=1),
                         minimum_nights = 0,
                         updatemode = 'singledate',
                         className = 'dcc_compon',
