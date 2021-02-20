@@ -15,8 +15,6 @@ def get_dataframe(start_date,end_date,table_name,engine):
 
 	reduced_df=entire_df[entire_df['created_at']<=end_date]
 	reduced_df=reduced_df[reduced_df['created_at']>=start_date]
-
-	print('start_date',start_date)
 	return reduced_df
 
 def process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_interest,CA=True,US=True):
@@ -302,7 +300,6 @@ def get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_p
 		response1 = requests.get(request1)
 
 		id_before =response1.json()['orders'][0]['id']
-		print(id_before)
 
 		request = "https://"+CA_key+":"+CA_pass+"@casca-designs-inc-canada.myshopify.com/admin/api/2021-01/orders.json?limit=50&status=any&since_id="+str(id_before)+"&fulfillment_status=any&created_at_min="+start_date+"&created_at_max="+end_date+"&fields=name,created_at,id,location_id,currency,email,fulfillment_status,tags,line_items,discount_applications,shipping_address,total-price,discount_codes"
 		response = requests.get(request)

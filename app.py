@@ -215,8 +215,6 @@ app.layout = html.Div(
     Input("date_range", "end_date"))
 def update_df(start_date,end_date):
     df = get_dataframe(start_date,end_date,'shopifydata',engine)
-    df.to_csv('output.csv')
-    print(df)
     df_json = df.to_json(orient="split")
     return df_json,start_date,end_date, date.today()+timedelta(days=1)
 
