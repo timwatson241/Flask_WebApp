@@ -10,7 +10,7 @@ CA_pass = os.environ.get('CA_pass')
 US_key = os.getenv('US_key')
 US_pass = os.environ.get('US_pass')
 
-DB_pass = os.getenv('DB_pass') #153c017c2d44caa6396d985f693586a4b89241fee050e6e06f5cd3f040234a68
+DB_pass = os.getenv('DB_pass')
 
 start_date = date(2018, 6, 1).strftime("%Y-%m-%dT23:59:59")
 end_date = date.today().strftime("%Y-%m-%dT23:59:59")
