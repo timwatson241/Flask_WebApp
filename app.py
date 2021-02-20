@@ -118,7 +118,7 @@ app.layout = html.Div(
                         {'label': 'USA', 'value': 'US'}
                     ],
                     value=['CA', 'US'],
-                    style={'display':'flex', 'justifyContent':'center','color':txcolor,'fontFamily':'Helvetica,sans-serif'}),
+                    style={'display':'flex', 'justifyContent':'center','color':txcolor}),
                     ]),
 
                 html.Div([
@@ -126,9 +126,9 @@ app.layout = html.Div(
                         id = 'pie_chart_1',
                         config = {'displayModeBar': 'hover'},
                         ),
-                    ],style={'width':'100%'}),
+                    ],style={'min-width':'0','width':'100%'}),
 
-                ],style={'width':'50%',"border":"1px grey solid",'padding':'10px','margin':'10px','margin-right':'5px','border-radius':'5px','fontFamily':'Helvetica,sans-serif'}
+                ],style={'min-width':'0','width':'50%',"border":"1px grey solid",'padding':'10px','margin':'10px','margin-right':'5px','border-radius':'5px'}
             ),
 
             html.Div([
@@ -154,7 +154,7 @@ app.layout = html.Div(
                         value='Orders with SmartFit',
                         clearable = False
                         ),
-                    ],style={'width':'40%','margin': '0 auto','margin-bottom':'5px','fontFamily':'Helvetica,sans-serif'}),
+                    ],style={'width':'40%','margin': '0 auto','margin-bottom':'5px'}),
                 html.Div([
                     dcc.Checklist(
                     id='country_picker_2',
@@ -163,7 +163,7 @@ app.layout = html.Div(
                         {'label': 'USA', 'value': 'US'}
                     ],
                     value=['CA', 'US'],
-                    style={'display':'flex', 'justifyContent':'center','color':txcolor,'fontFamily':'Helvetica,sans-serif'}),
+                    style={'display':'flex','justifyContent':'center','color':txcolor}),
                     ]),
 
                 html.Div([
@@ -171,11 +171,11 @@ app.layout = html.Div(
                         id = 'pie_chart_2',
                         config = {'displayModeBar': 'hover'},
                         ),
-                    ],style={'width':'100%','fontFamily':'Helvetica,sans-serif'}),
+                    ],style={'min-width':'0','width':'100%'}),
 
-                ],style={'width':'50%',"border":"1px grey solid",'padding':'10px','margin':'10px','margin-left':'5px','border-radius':'5px','fontFamily':'Helvetica,sans-serif'}
+                ],style={'min-width':'0','width':'50%',"border":"1px grey solid",'padding':'10px','margin':'10px','margin-left':'5px','border-radius':'5px'}
             )
-        ],style={'width':'100%','display':'flex','margin-top':'30px','fontFamily':'Helvetica,sans-serif'}),
+        ],style={'min-width':'0','width':'100%','display':'flex','margin-top':'30px'}),
 
         
 
@@ -187,7 +187,7 @@ app.layout = html.Div(
                     {'label': 'USA', 'value': 'US'}
                 ],
                 value=['CA', 'US'],
-                style={'display':'flex', 'justifyContent':'center','margin-top':'10px','color':txcolor,'fontFamily':'Helvetica,sans-serif'}
+                style={'display':'flex', 'justifyContent':'center','margin-top':'10px','color':txcolor}
                 ),
             
             html.Div([
@@ -195,12 +195,12 @@ app.layout = html.Div(
                     id = 'bar-chart',
                     config = {'displayModeBar': 'hover'},
                     ),],
-                style={'width':'100%','display':'inline-block','fontFamily':'Helvetica,sans-serif'}
+                style={'width':'100%','display':'inline-block'}
                 )
-            ],style={"border":"1px grey solid",'padding':'0px','margin':'10px','margin-top':'0px','border-radius':'5px','fontFamily':'Helvetica,sans-serif'})
+            ],style={"border":"1px grey solid",'padding':'0px','margin':'10px','margin-top':'0px','border-radius':'5px'})
 
     ],
-    style={"background-color": bgcolor,'margin':'10px','fontFamily':'Helvetica,sans-serif'},
+    style={"background-color": bgcolor,'margin':'10px'},
 )
 
 
