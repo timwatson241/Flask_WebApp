@@ -212,7 +212,8 @@ app.layout = html.Div(
     Input("date_range", "end_date"))
 def update_df(start_date,end_date):
     df = get_dataframe(start_date,end_date,'shopifydata',engine)
-    print(df.head())
+    df.to_csv('output.csv')
+    print(df)
     df_json = df.to_json(orient="split")
     return df_json, date.today()+timedelta(days=1), 'Displaying data from {} to {}'.format(start_date, end_date)
 
@@ -295,15 +296,11 @@ def update_prov_table(country_3,start_date,end_date,df_json):
 @app.callback(
     Output('pie_chart_1', 'figure'),
     Input('country_picker_1','value'),
-    Input("date_range", "start_date"),
-    Input("date_range", "end_date"),
     Input("dropdown_1", "value"),
     Input('intermediate-value', 'children'))
-def update_graph(country_1,start_date,end_date,dropdown_value_1,df_json):
+def update_graph(country_1,dropdown_value_1,df_json):
 
     df = pd.read_json(df_json, orient='split')
-
-    print('TYPE',df['product'].dtypes)
 
     if 'CA' in country_1:
         CA=True

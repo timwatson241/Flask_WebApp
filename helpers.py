@@ -16,6 +16,7 @@ def get_dataframe(start_date,end_date,table_name,engine):
 	reduced_df=entire_df[entire_df['created_at']<=end_date]
 	reduced_df=reduced_df[reduced_df['created_at']>=start_date]
 
+	print('start_date',start_date)
 	return reduced_df
 
 def process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_interest,CA=True,US=True):
@@ -36,7 +37,7 @@ def process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_in
     df_temp=df[df["discount_code"].str.contains('exchange',na=False,case=False)==False]
 
     #convert total price to float
-    df_temp['total_price'] = pd.to_numeric(df_temp['total_price'], downcast="float")
+    #df_temp['total_price'] = pd.to_numeric(df_temp['total_price'], downcast="float")
 
     #count free orders and remove free items
     qty_giveaways=len(df_temp[df_temp["total_price"]==0.00])
@@ -53,9 +54,7 @@ def process_df(df,utility_colors,knit_colors,leather_colors,discount_codes_of_in
     Smartfit_order_count = 0
     for index, row in df_temp.iterrows():
         product_list = row['product']
-        print(product_list)
         if any('SmartFit' in product for product in product_list):
-        	#print('product',product)
             Smartfit_order_count+=1
 
 
@@ -288,7 +287,6 @@ def build_piechart(labels,values,text,colors,bgcolor,txcolor):
 
 def get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,US=True):
 
-	print(start_date,'start_date')
 	day_before = (parser.parse(start_date)-timedelta(days=1)).isoformat()+"-08:00"
 	week_before = (parser.parse(start_date)-timedelta(weeks=1)).isoformat()+"-08:00"
 
@@ -304,11 +302,10 @@ def get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_p
 		response1 = requests.get(request1)
 
 		id_before =response1.json()['orders'][0]['id']
+		print(id_before)
 
 		request = "https://"+CA_key+":"+CA_pass+"@casca-designs-inc-canada.myshopify.com/admin/api/2021-01/orders.json?limit=50&status=any&since_id="+str(id_before)+"&fulfillment_status=any&created_at_min="+start_date+"&created_at_max="+end_date+"&fields=name,created_at,id,location_id,currency,email,fulfillment_status,tags,line_items,discount_applications,shipping_address,total-price,discount_codes"
 		response = requests.get(request)
-
-		#pprint.pprint(response.json())
 
 		flag = False
 		while flag == False:
@@ -321,7 +318,7 @@ def get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_p
 					'currency':[response.json()['orders'][i]['currency']],
 					'product':[[]],
 					'tags':[response.json()['orders'][i]['tags']],
-					'id':[str(response.json()['orders'][i]['id'])],
+					'id':[int(response.json()['orders'][i]['id'])],
 					'location_id':[str(response.json()['orders'][i]['location_id'])],
 					'total_price':[response.json()['orders'][i]['total_price']]
 					#'fulfillment_status':[response.json()['orders'][i]['fulfillment_status']]
@@ -372,7 +369,7 @@ def get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_p
 					'currency':[response.json()['orders'][i]['currency']],
 					'product':[[]],
 					'tags':[response.json()['orders'][i]['tags']],
-					'id':[str(response.json()['orders'][i]['id'])],
+					'id':[int(response.json()['orders'][i]['id'])],
 					'location_id':[str(response.json()['orders'][i]['location_id'])],
 					'total_price':[response.json()['orders'][i]['total_price']]
 					#'fulfillment_status':[response.json()['orders'][i]['fulfillment_status']]

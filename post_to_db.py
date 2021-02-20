@@ -1,4 +1,4 @@
-from helpers import get_dataframe
+from helpers import get_dataframe_from_shopify
 import os
 from datetime import date, timedelta
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, Float
@@ -20,5 +20,4 @@ engine = create_engine(URI, echo = True)
 
 df = get_dataframe_from_shopify(start_date,end_date,CA_key, CA_pass, US_key, US_pass, CA=True,US=True)
 
-df.to_sql('shopifydata', con=engine, if_exists='replace')
-
+df.to_sql('shopifydata', con=engine, if_exists='replace',method='multi')
