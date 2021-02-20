@@ -207,7 +207,6 @@ app.layout = html.Div(
 @app.callback(
     Output('intermediate-value', 'children'),
     Output('date_range','max_date_allowed'),
-    Output('date-confirm','children'),
     Input("date_range", "start_date"),
     Input("date_range", "end_date"))
 def update_df(start_date,end_date):
@@ -215,7 +214,7 @@ def update_df(start_date,end_date):
     df.to_csv('output.csv')
     print(df)
     df_json = df.to_json(orient="split")
-    return df_json, date.today()+timedelta(days=1), 'Displaying data from {} to {}'.format(start_date, end_date)
+    return df_json, date.today()+timedelta(days=1)
 
 @app.callback(
     Output("bar-chart", "figure"),
@@ -295,6 +294,7 @@ def update_prov_table(country_3,start_date,end_date,df_json):
 
 @app.callback(
     Output('pie_chart_1', 'figure'),
+    Output('date-confirm','children'),
     Input('country_picker_1','value'),
     Input("dropdown_1", "value"),
     Input('intermediate-value', 'children'))
@@ -395,7 +395,7 @@ def update_graph(country_1,dropdown_value_1,df_json):
     text_1 = pie_chart_dict[dropdown_value_1]['text']
     result_1 = build_piechart(labels_1,values_1,text_1,colors,bgcolor,txcolor)
 
-    return result_1
+    return result_1,'Displaying data from {} to {}'.format(start_date, end_date)
 
 @app.callback(
     Output('pie_chart_2', 'figure'),
