@@ -82,6 +82,8 @@ app.layout = html.Div(
         
         
         html.Div(id='intermediate-value', style={'display': 'none'}),
+        html.Div(id='intermediate-value-2', style={'display': 'none'}),
+        html.Div(id='intermediate-value-3', style={'display': 'none'}),
         html.H3(id='date-confirm', style={"textAlign": "center",'color':txcolor,'fontFamily':'Helvetica,sans-serif'}),
         
         html.Div([
@@ -206,6 +208,8 @@ app.layout = html.Div(
 
 @app.callback(
     Output('intermediate-value', 'children'),
+    Output('intermediate-value-2', 'children'),
+    Output('intermediate-value-3', 'children'),
     Output('date_range','max_date_allowed'),
     Input("date_range", "start_date"),
     Input("date_range", "end_date"))
@@ -214,7 +218,7 @@ def update_df(start_date,end_date):
     df.to_csv('output.csv')
     print(df)
     df_json = df.to_json(orient="split")
-    return df_json, date.today()+timedelta(days=1)
+    return df_json,start_date,end_date, date.today()+timedelta(days=1)
 
 @app.callback(
     Output("bar-chart", "figure"),
@@ -297,8 +301,10 @@ def update_prov_table(country_3,start_date,end_date,df_json):
     Output('date-confirm','children'),
     Input('country_picker_1','value'),
     Input("dropdown_1", "value"),
-    Input('intermediate-value', 'children'))
-def update_graph(country_1,dropdown_value_1,df_json):
+    Input('intermediate-value', 'children'),
+    Input('intermediate-value-2', 'children'),
+    Input('intermediate-value-3', 'children'))
+def update_graph(country_1,dropdown_value_1,df_json,start_date,end_date):
 
     df = pd.read_json(df_json, orient='split')
 
